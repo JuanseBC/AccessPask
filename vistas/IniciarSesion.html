@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<link rel="stylesheet" type="text/css" href="../stylos/iniciarsesion4.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Pask</title>
+    <link rel="icon" type="img" href="../img/pask.png" size="any">
+
+
+
+</head>
+
+<body>
+    <form action="../modelo/validar.php" method="post" autocomplete="off." class="full-box logInForm">
+
+        <IMG class="img_principal" SRC="../img/persona.jpg">
+
+        <div class="titulo">
+            <h1>INICIAR SESIÓN</h1>
+        </div>
+
+        <label for="rol" class="rol-text">ROL</label>
+        <select name="idRol" id="rol" required class="select rol">
+                <option selected disabled value="">
+                  Seleccione Rol
+                </option>
+                <option value="1"> Administrador</option>
+                <option value="2"> Profesor</option>
+                <option value="3"> Alumno</option>
+              </select>
+
+        <label for="doc2" class="text"> Digite su documento </label>
+        <input type="text" name="doc" class="doc2" id="doc2">
+
+        <label for="cla2" class="text">Clave </label>
+        <input type="password" name="contraseña" id="cla2" class="cla2">
+
+        <button class="LogIn" type="submit" value="submit">LogIn</button> </td>
+        <div class="CosaFea">
+
+            <h5> Access.Pask WEB &copy; 2022
+            </h5>
+        </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

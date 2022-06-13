@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccessPask</title>
+</head>
+
+<body>
+    <form method="post" action="../vistas/registro.PHP">
+        <h4><label for="rol" style="color: rgb(0, 0, 0); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-style: oblique; font-weight: 600; ">ROL</label></h4>
+        <br>
+        <select name="idRol" id="rol" required style="border-radius: 10px;
+        display: block; font-family: Courier, 'Lucida Console', monospace; background-color:white;" width="180xp" height="90xp"  >
+      
+                <option selected disabled value="">
+                  Seleccione Rol
+                </option>
+                <option value="1"> Administrador</option>
+                <option value="2"> Profesor</option>
+                <option value="3"> Alumno</option>
+              </select><br><br>
+        <div class="modal-footer" style="background-color: #ffd000; width: 498px; border-radius: 15px; ">
+            <button  class="btn btn-dark" type="submit" name="btnIngresar" >Ir al Registro</button>
+
+        </div>
+    </form>
+</body>
+
+</html>

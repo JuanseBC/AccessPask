@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    font-family: cursive;
+    
+    min-height: 100vh;
+}
+nav{
+    background-color: black;
+    text-align: center;
+}
+
+nav ul {
+   list-style:none;
+   padding: 0%;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a{
+    color: gray;
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+nav li a:hover{
+background-color:yellow;}
+
+form{
+    border-radius: 5px;
+    width: 45%;
+    max-width: 500%;
+    background: yellow;
+    padding: 20px;
+}
+textarea{
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Nombre{
+    font-family: 'Times New Roman', Times, serif;
+}
+.apellido{
+    font-family: 'Times New Roman', Times, serif;
+}
+footer{
+    text-align: center;
+   
+    color: white;
+    }
+
+
+

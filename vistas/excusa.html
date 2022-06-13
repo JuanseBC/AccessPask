@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de excusa</title>
+    <link href="../stylos/excusa.css" rel="stylesheet" type="text/css">
+</head>
+<body style="background: rgb(255,244,0);
+background: linear-gradient(180deg, rgba(255,244,0,1) 0%, rgba(0,0,0,1) 100%);">
+<center>
+    <div>
+        <div id="principal"><h1>EXCUSA</h1></div>
+     <nav>
+            <ul>
+              <li><a href="MAT.php">Regresar </a></li>
+              <li><a href="">Ayuda </a> </li>
+              <li><a href="../modelo/cerrar_sesion.php">Cerrar Sesion </a> </li>
+            </ul>
+        </nav>
+
+     <form action="../modelo/excusa.php" method="post" enctype="multipart/form-data" >
+        
+        <h1>formulario de excusa</h1>
+        <div>
+            <div class="formulario">
+                <label for="username">
+                    <span> documento</span>
+                     <input id="documento" type="text" name="doc" required>
+                      <abbr title="required" aria-label="required">*</abbr><br><br>
+              </label>
+            <label for="username">
+                <span> Nombre</span>
+                 <input id="nombre" type="text" name="nombre" required>
+                  <abbr title="required" aria-label="required">*</abbr><br><br>
+          </label>
+          <label id="nombre" for="username">
+            <span>apellido</span>
+             <input id="apellido" type="text" name="apellido" required>
+              <abbr title="required" aria-label="required">*</abbr><br><br>
+      </label>
+            <label id="nombre" for="username">
+                  <span>fecha:</span>
+                   <input id="fecha" type="date" name="fecha" required>
+                    <abbr title="required" aria-label="required">*</abbr><br><br>
+            </label>
+        </div>
+        <center>
+            <label id="nombre" for="username">
+                     <span>descripcion</span></label><br>
+                     <textarea name="descripcion" rows="10" cols="40" required >descripcion</textarea> <br>
+        <input type="file" name="subirarchivo" required > <br>
+        <input  type="submit"  name="enviar" values="enviar">
+        </div>
+    </form><br>
+</center>
+<footer>
+    Access.Pask WEB &copy; 2022
+</footer>
+</body>
+</html>
