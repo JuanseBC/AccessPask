@@ -36,20 +36,6 @@
          }
        ?>
      </select>
-      <div id="salon"></div> 
-      <?php
-      switch ($name){
-      case "3":
-        echo "<label  class='rol-text'>Rol <br> Alumno</label>";
-         $consulta= "Select * from cursos_ ";
-         $filas=mysqli_query($con, $consulta);
-         echo "<select name='Curso' class='select2 tam'>";
-       while ($cursos=mysqli_fetch_array($filas)){
-        echo "<option>"  . $cursos["idCurso"] .  "</option>";
-       }
-    echo "</select>";
-      }
-      ?>
       <div class="text">
           <br>Nombre
       </div>
