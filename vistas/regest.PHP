@@ -38,7 +38,6 @@
      </select>
       <div id="salon"></div> 
       <?php
-        echo "<label  class='rol-text'>Rol <br> Alumno</label>";
          $consulta= "Select * from cursos_ ";
          $filas=mysqli_query($con, $consulta);
          echo "<select name='Curso' class='select2 tam'>";
