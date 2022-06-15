@@ -56,6 +56,16 @@
           N° Documento
       </div>
       <input type="text" name="documento" placeholder="Número" class="doc3"required>
+      <label for="doc" class="doc-text">Tipo de correo</label>
+      <select name="Doc" id="doc" required class="select doc">
+        <option selected disabled value="">Tipo de correo </option>
+        <option value="1"> Instituciona</option>
+        <option value="2"> Personal</option>
+      </select>
+      <div class="text">
+          Correo
+      </div>
+      <input type="text" name="correo" placeholder="accesspask@gmail.com" class="doc3"required>
       <div class="text">
           Clave
         </div>
@@ -64,7 +74,7 @@
       </div>
       <div class="menu"> <br>
         <ul>
-          <li><a href="ADM.html">
+          <li><a href="../vistas/ADM.php">
                   Regresar</a></li>
         </ul>
       </div>
