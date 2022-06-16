@@ -89,7 +89,7 @@
             echo"<td class= 'text3'>".$dato['documento']."</p></td>"; 
             echo"<td class= 'text3'>".$dato['idCurso']."</p></td>"; 
             ?>
-                            <td><a href="../modelo/editar.php?id=<?php echo $dato['documento']?>" class="btn btn-outline-warning">Editar</a></td>
+                            <td><a href="../modelo/editar.php?id=<?php echo $dato['documento']?>" class="btn btn-warning">Editar</a></td>
                             <td><a href="../modelo/eliminar.php?id1=<?php echo $dato['documento']?>" class="btn btn-outline-danger">Inactivar</a></td><tr>
                             <?php }
             ?>

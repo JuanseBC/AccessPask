@@ -1,3 +1,5 @@
+<?php include("../formatos/cerrse.php");          ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" type="text/css" href="../stylos/registro5.css">

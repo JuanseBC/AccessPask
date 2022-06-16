@@ -1,6 +1,8 @@
+<?php include("../formatos/cerrse.php");          ?>
+
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="../stylos/ADM12.css">
+<link rel="stylesheet" type="text/css" href="../stylos/ADM13.css">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +21,7 @@
         <ul>
           <li><a href="ADM.php">
               Inicio</a></li>
-          <li><a href="Cursos.php">
+          <li><a href="../vistas/Cursos.php">
               Cursos</a></li>
           <li><a href="../controlador/ConMaes.php">
                Maestros</h4></a></li>
@@ -45,15 +47,13 @@
       </center>
     </div>
   </div> <br>
-    <div id="cuadro_texto2">
-        <center>
-            <h3>
-                <p
-                    style=" font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-style:normal; font-weight: 1000; font: size 60px;">
+    <div class="cuadro_texto2">
+       
+           
                     Para ver el listado de alumnos  
                     <br>
-                    Seleccione un cuso </p>
-            </h3>
+                    Seleccione un cuso 
+          
         
         <?php
         $host="localhost";
@@ -79,8 +79,9 @@
         </form>
         <br><br>
         <form method="post" action="CRC.html">
-            
+          
             <button class="RegisCur" type="submit"  value="Registrar curso" >Registrar Curso</button> </td>
+        
         </form> 
         </center>
     </div>
