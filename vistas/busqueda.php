@@ -87,16 +87,12 @@
             echo"<td class= 'text3'>".$dato['documento']."</p></td>"; 
             echo"<td class= 'text3'>".$dato['idCurso']."</p></td>"; 
             ?>
-                            <td><a href="../modelo/editar.php?id=<?php echo $dato['documento']?>" class="btn btn-outline-warning">Editar</a></td>
-                            <td><a href="../modelo/eliminar.php?id1=<?php echo $dato['documento']?>" class="btn btn-outline-danger">Inactivar</a></td><tr>
-                            <?php }
-            ?>
+            <td><a href="../modelo/editar.php?id=<?php echo $dato['documento']?>" class="btn btn-outline-warning">Editar</a></td>
+            <td><a href="../modelo/eliminar.php?id1=<?php echo $dato['documento']?>" class="btn btn-outline-danger">Inactivar</a></td><tr>
+           <?php }?>
      </table>
-            
         </center>
     </div>
- 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>

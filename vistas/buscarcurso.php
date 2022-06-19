@@ -10,13 +10,8 @@
     <link rel="icon" type="img" href="../img/pask.png" size="any">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
- 
-   
-  
 </head>
 <body>
-    
-    
 <img class="img_principal" src="../img/pask.png"  >
  <div class="cuadro_texto">
   <div class="iconos">
@@ -79,7 +74,7 @@
                 $con=mysqli_connect($host,$user,$pass);
         
                 mysqli_select_db($con,$bd);
-         $consulta= "Select * from usuario where idrol=3 and idCurso=$curso";
+         $consulta= "Select * from usuario where idrol=3 and idCurso=$curso and idEst='1'";
          $filas=mysqli_query($con, $consulta);
         
          while ($dato=mysqli_fetch_array($filas))
@@ -89,7 +84,7 @@
             echo"<td class= 'text3'>".$dato['documento']."</p></td>"; 
             echo"<td class= 'text3'>".$dato['idCurso']."</p></td>"; 
             ?>
-                            <td><a href="../modelo/editar.php?id=<?php echo $dato['documento']?>" class="btn btn-warning">Editar</a></td>
+                            <td><a href="../modelo/editcur.php?id=<?php echo $dato['documento']?>" class="btn btn-warning">Editar</a></td>
                             <td><a href="../modelo/eliminar.php?id1=<?php echo $dato['documento']?>" class="btn btn-outline-danger">Inactivar</a></td><tr>
                             <?php }
             ?>

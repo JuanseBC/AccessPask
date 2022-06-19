@@ -31,6 +31,7 @@ $row=mysqli_fetch_array($query);
                                 <input type="text"  class="text1" name="Nombre" placeholder="Digite su nombre" value="<?php echo $row['Nombre']  ?>">
                                 <input type="text" class="text1" name="Apellido" placeholder="Digite su apellido" value="<?php echo $row['Apellido']  ?>">
                                 <input type="text" class="text1" name="documento" placeholder="Digite su documento" value="<?php echo $row['documento']  ?>">
+                                <input type="text"  class="text1" name="idCur" placeholder="Digite su curso" value="<?php echo $row['idCurso']  ?>">
                                 <br><br>
                                 <button class="Actu" type="submit"  value="submit" >Actualizar</button> 
                            

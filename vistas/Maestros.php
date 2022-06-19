@@ -68,7 +68,7 @@
                         <?php
         foreach ($datos as $dato  )
         {
-            if ($dato["idRol"]==2){
+            if ($dato["idRol"]==2 and $dato["idEst"]==1){
             echo"<tr><td class= 'text3'>".$dato['Nombre']."</p></td>";
             echo"<td class= 'text3'>".$dato['Apellido']."</p></td>";
             echo"<td class= 'text3'>".$dato['documento']."</p></td>"; 

@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="../stylos/ADM13.css">
+<link rel="stylesheet" type="text/css" href="../stylos/ADM14.css">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -78,6 +78,7 @@
          <input type="image" src="../img/lupa.png" width="3%"  >
         </form>
         <br><br>
+        <a class="boton" href="activar.php">Activar usuario</a>
         <form method="post" action="CRC.html">
           
             <button class="RegisCur" type="submit"  value="Registrar curso" >Registrar Curso</button> </td>
