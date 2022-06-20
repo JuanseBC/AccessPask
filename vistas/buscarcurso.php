@@ -1,6 +1,7 @@
+<?php include("../formatos/cerrse.php");          ?>
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="../stylos/ADM13.css">
+<link rel="stylesheet" type="text/css" href="../stylos/ADM15.css">
 
 <head>
     <meta charset="UTF-8">
@@ -18,16 +19,11 @@
     <div class="menu">
             <center>
             <ul>
-          <li><a href="../vistas/ADM.php">
-              Inicio</a></li>
-          <li><a href="../vistas/Cursos.php">
-              Cursos</a></li>
-          <li><a href="../controlador/ConMaes.php">
-              Maestros</a></li>
-            <li><a  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Registro</a></li>
-             <li><a href="../modelo/cerrar_sesion.php" img src="../img/salir.png">
-              Salir</a> </li>
+          <li><a href="../vistas/ADM.php">Inicio</a></li>
+          <li><a href="../vistas/Cursos.php">Cursos</a></li>
+          <li><a href="../controlador/ConMaes.php">Maestros</a></li>
+          <li><a  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Registro</a></li>
+          <li><a href="../modelo/cerrar_sesion.php" img src="../img/salir.png">Salir</a> </li>
       
               <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -48,8 +44,6 @@
     </div>
   </div> <br>
         </div>
-
-   
     <div id="cuadro_texto2">
         <center>
         <div class="listado">
@@ -62,7 +56,7 @@
                     <td class= "text2"> Apellido</td>
                     <td class= "text2">Documento</td>
                     <td class= "text2">Curso</td>
-                    <td></td><td></td>
+                    <td class= "text2">Correo</td><td></td>
                 </tr>
                 <?php
 
@@ -82,7 +76,8 @@
             echo"<tr><td class= 'text3'>".$dato['Nombre']."</p></td>";
             echo"<td class= 'text3'>".$dato['Apellido']."</p></td>";
             echo"<td class= 'text3'>".$dato['documento']."</p></td>"; 
-            echo"<td class= 'text3'>".$dato['idCurso']."</p></td>"; 
+            echo"<td class= 'text3'>".$dato['idCurso']."</p></td>";
+            echo"<td class= 'text3'>".$dato['correo']."</p></td>";
             ?>
                             <td><a href="../modelo/editcur.php?id=<?php echo $dato['documento']?>" class="btn btn-warning">Editar</a></td>
                             <td><a href="../modelo/eliminar.php?id1=<?php echo $dato['documento']?>" class="btn btn-outline-danger">Inactivar</a></td><tr>

@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="../stylos/ADM13.css">
+<link rel="stylesheet" type="text/css" href="../stylos/ADM15.css">
 
 <head>
     <meta charset="UTF-8">
@@ -64,7 +64,8 @@
                     <tr>
                         <td class= "text2">Nombre</td>
                         <td class= "text2">Apellido</td>
-                        <td class= "text2">Documento</td> <tr>
+                        <td class= "text2">Documento</td> 
+                        <td class= "text2">Correo</td><td></td><tr>
                         <?php
         foreach ($datos as $dato  )
         {
@@ -72,6 +73,7 @@
             echo"<tr><td class= 'text3'>".$dato['Nombre']."</p></td>";
             echo"<td class= 'text3'>".$dato['Apellido']."</p></td>";
             echo"<td class= 'text3'>".$dato['documento']."</p></td>"; 
+            echo"<td class= 'text3'>".$dato['correo']."</p></td>";
             ?>
                             <td><a href="../modelo/editar.php?id=<?php echo $dato['documento']?>" class="btn btn-warning">Editar</a></td>
                             <td><a href="../modelo/eliminar.php?id1=<?php echo $dato['documento']?>" class="btn btn-outline-danger">Inactivar</a></td><tr>

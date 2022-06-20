@@ -17,22 +17,19 @@
 
     <header class="cuadro_texto">
         <img src="../img/pask.png" alt="logo accespask">
-
+        
 
     <ul>
 
         <li><a href="../vistas/PRF.php">Cursos</a></li>
         <li><a href="../modelo/cerrar_sesion.php" img src="../img/salir.png">Salir</a> </li>
-         
+        
     </ul>
-
+    <h2 class="nom">TITULAR DE CLASE</h2>
 
     </header>
-
     <main>
-    <h2>TITULAR DE CLASE</h2>
     <?php
-
         $host="localhost";
         $user="root";
         $pass="";
@@ -58,11 +55,6 @@
         </tr>
         </thead>
         <tbody>
-
-
-        
-
-
         <?php foreach ($produc as $dato) {?>
 
         <tr>   

@@ -1,6 +1,7 @@
+<?php include("../formatos/cerrse.php");          ?>
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="../stylos/ADM13.css">
+<link rel="stylesheet" type="text/css" href="../stylos/ADM15.css">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -64,7 +65,7 @@
                     <td class= "text2">Nombre</td>
                     <td class= "text2">Apellido</td>
                     <td class= "text2">Documento</td>
-                 
+                    <td class= "text2">Correo</td>     
                     <td></td><td></td>
                 </tr>
     
@@ -85,6 +86,7 @@
             echo"<tr><td class= 'text3'>".$dato['Nombre']."</p></td>";
             echo"<td class= 'text3'>".$dato['Apellido']."</p></td>";
             echo"<td class= 'text3'>".$dato['documento']."</p></td>"; 
+            echo"<td class= 'text3'>".$dato['correo']."</p></td>"; 
             
             ?>
             <td><a   href="../modelo/editar.php?id=<?php echo $dato['documento']?>" class="btn btn-warning">Editar</a></td>

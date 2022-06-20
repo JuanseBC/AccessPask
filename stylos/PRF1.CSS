@@ -1,8 +1,8 @@
-
-*{
-    margin:0;
+* {
+    margin: 0;
     font-family: 'RobotoCondensed';
 }
+
 .scroll {
     border: 1px solid;
     height: 100%;
@@ -29,29 +29,32 @@
     background: #ffd000;
 }
 
-.cuadro_texto{
-       
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-font-style:normal;
-font-weight: 900; 
-font-size: 35px;
+.cuadro_texto {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
 }
-header img{
-    width:20%;
+
+header img {
+    width: 20%;
 }
+
 ul {
     display: inline;
     position: absolute;
-    margin-top:1px
-
+    margin-top: 1px
 }
-.cuadro_texto li{
-    margin:20px;
+
+.cuadro_texto li {
+    margin: 20px;
     display: inline-block;
 }
+
 .cuadro_texto ul {
     list-style: none;
 }
+
 ul li a {
     color: #ffd000;
     display: inline-block;
@@ -69,27 +72,38 @@ ul li a {
     text-align: center;
     margin-left: 35%;
 }
- ul li a:hover {
+
+ul li a:hover {
     background-color: rgba(0, 0, 0, 0.472);
-     color:#fff;
+    color: #fff;
 }
-main{
+
+.nom {
     text-align: center;
-    margin:20px;
+    font-size: 20px;
 }
-main h2{
-    margin:20px;
+
+main {
+    text-align: center;
+    margin: 20px;
 }
-main table{
-    width:90%;
-    margin:20px;
+
+main h2 {
+    margin: 20px;
 }
-main table td, th{
-    height:30px;
+
+main table {
+    width: 95%;
+    margin: 20px;
+}
+
+main table td,
+th {
+    height: 30px;
     border-bottom: 1px solid
 }
 
-.btn{
+.btn {
     color: #ffd000;
     display: inline-block;
     padding: 5px 35px;
@@ -107,10 +121,12 @@ main table td, th{
     margin-left: 35%;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: rgba(0, 0, 0, 0.472);
-     color:#fff;
-}  
+    color: #fff;
+}
+
+
 /* html {
   
  background-color: rgb(255, 255, 255);
