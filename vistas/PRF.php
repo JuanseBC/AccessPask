@@ -25,10 +25,11 @@
         <li><a href="../modelo/cerrar_sesion.php" img src="../img/salir.png">Salir</a> </li>
         
     </ul>
-    <h2 class="nom">TITULAR DE CLASE</h2>
+    <h2 class="nom">Bienvenido maestro</h2>
 
     </header>
     <main>
+    
     <?php
         $host="localhost";
         $user="root";
@@ -45,9 +46,30 @@
         ?> 
 
         <div class="cuadro_texto2">
-            LISTA DE ESTUDIANTES
+            Seleccione un curso
         </div>
-    <table >
+        <?php
+        $host="localhost";
+        $user="root";
+        $pass="";
+        $bd="accesspask";
+        $con=mysqli_connect($host,$user,$pass);
+        mysqli_select_db($con,$bd);
+         $consulta= "Select idCurso from cursos_ ";
+         $filas=mysqli_query($con, $consulta);
+        ?>
+        <form method="post" action="excest.php">
+        <select name="Cursos"  >
+        <?php
+         while ($cursos=mysqli_fetch_array($filas))
+         {
+           echo "<option>" . $cursos["idCurso"] . "</option>";
+         }
+       ?>
+    </select>
+         <input type="image" src="../img/lupa.png" width="3%"  >
+        </form>
+    <!-- <table >
         <thead>
         <tr >
             <th >Nombres y apellidos</th>
@@ -61,7 +83,7 @@
         <td> <?php echo  $dato['Nombre'] ." ". $dato['Apellido'] ; ?> </td>
         <td><a href="../controlador/buscar.php?id=<?php echo $dato['documento']?>" class="btn">VER</a></td>
     
-        <?php } ?>
+        <?php } ?> -->
         </tbody>
     </table>
 

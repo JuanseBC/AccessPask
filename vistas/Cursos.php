@@ -48,20 +48,15 @@
     </div>
   </div> <br>
     <div class="cuadro_texto2">
-       
-           
                     Para ver el listado de alumnos  
                     <br>
-                    Seleccione un cuso 
-          
-        
+                    Seleccione un curso 
         <?php
         $host="localhost";
         $user="root";
         $pass="";
         $bd="accesspask";
         $con=mysqli_connect($host,$user,$pass);
-
         mysqli_select_db($con,$bd);
          $consulta= "Select idCurso from cursos_ ";
          $filas=mysqli_query($con, $consulta);
