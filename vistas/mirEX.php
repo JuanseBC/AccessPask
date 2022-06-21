@@ -31,18 +31,17 @@
 background: linear-gradient(180deg, rgba(255,244,0,1) 0%, rgba(0,0,0,1) 100%);">
 <center>
     <table class="table table-dark table-striped" style=" color: white; text-align:  center ;   width: 69%;">
-    <head>
             <TR>
 			<td>Nombres y apellidos</td>
-            </TR>
-
+            <td>Fecha</td>
+            <td>Archivo</td>
 		   <?php foreach ($produc as $dato) {
            
             ?>
-
-        <tr>   
-        <td> <?php echo  $dato['nombre'] ." ". $dato['apellido'] ; ?> </td></tr>
-        <tr><td> <?php echo "<img  src='" . $dato['archivo'] . "'>";?></td></tr>
+            </TR>
+        <td> <?php echo  $dato['nombre'] ." ". $dato['apellido'] ; ?> </td>
+        <td> <?php echo  $dato['fecha']   ; ?> </td>
+        <td> <?php echo "<img  src='" . $dato['archivo'] . "'>";?></td></tr>
 
         <?php } ?>
 	</table>
