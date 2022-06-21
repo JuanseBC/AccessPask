@@ -29,7 +29,7 @@ if ($nr==1){
               $_SESSION['usuario'] = $doc;
 
 
-      header("location: ../vistas/EST.html");
+      header("location: ../vistas/EST.php");
        
      } 
   
