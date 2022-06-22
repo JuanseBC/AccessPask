@@ -25,18 +25,11 @@
                     
                     <div class="text1">Curso  <input type="text" class="insert" name="curso" placeholder="Ej: 601" required></div>
                     <div class="text1">Documento <input type="text" class="insert" name="documento" placeholder="Ej: 111111111" required></div>
+                    <div class="text1">Nombre<input type="text" class="insert" name="nombre" placeholder="Ej: Juan" required></div>
+                    <div class="text1">Apellido <input type="text" class="insert" name="apellido" placeholder="Ej: Cortés" required></div>
                    <!--  
-                        <label for="username">
-                <span> Nombre</span>
-                 <input id="nombre" type="text" name="nombre" required>
-                  <abbr title="required" aria-label="required">*</abbr><br><br>
-          </label>
-                        <label id="nombre" for="username">
-            <span>apellido</span>
-             <input id="apellido" type="text" name="apellido" required>
-              <abbr title="required" aria-label="required">*</abbr><br><br>
-      </label>
-                        <label id="nombre" for="username">
+                        
+            
                   <span>fecha:</span>
                    <input id="fecha" type="date" name="fecha" required>
                     <abbr title="required" aria-label="required">*</abbr><br><br>
