@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Access Pask</title>
     <link rel="icon" type="img" href="../img/pask.png" size="any">
-    <link rel="stylesheet" href="../stylos/PRF1.css">
+    <link rel="stylesheet" href="../stylos/PRF2.css">
   
 </head>
 <body>
@@ -89,10 +89,10 @@
 
     </main>
     
-    <div class="clearflix">
-            <footer>
+    <div class="loFeo">
+            
                 Access.Pask WEB &copy; 2022
-            </footer>
+            
         </div>
 
     <script src="../js/modal1.js"></script>

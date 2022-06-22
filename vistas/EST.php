@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Access Pask</title>
     <link rel="icon" type="img" href="../img/pask.png" size="any">
-    <link rel="stylesheet" href="../stylos/EST.css">
+    <link rel="stylesheet" href="../stylos/EST2.css">
   
 </head>
 
@@ -21,8 +21,9 @@
 
     <ul>
 
-        <li><a href="../vistas/excusa.html">Excusa</a></li>
+        <li><a href="../vistas/excusa.php">Excusa</a></li>
         <li><a href="../modelo/cerrar_sesion.php" img src="../img/salir.png">Salir</a> </li>
+        
         
         
     </ul>
@@ -44,14 +45,14 @@
         $produc=$filas; 
         ?> 
 
-        <div class="nom">
+        <div class="nom"><img class="listmaes" src="../img/maestro.jpg">
             LISTA DE MAESTROS
         </div>
     <table >
         <thead>
         <tr >
-            <th >Nombre</th>
-            <th> Apellido</th>
+            <th class="text1">Nombre y Apellido</th>
+            <th class="text1">Correo</th>
            
         </tr>
         </thead>
@@ -60,6 +61,7 @@
 
         <tr>   
         <td> <?php echo  $dato['Nombre'] ." ". $dato['Apellido'] ; ?> </td>
+        <td> <?php echo  $dato['correo'] ." " ?> </td>
 
         <?php } ?>
         </tbody>
@@ -67,6 +69,12 @@
   
 
         </main>
+
+        <div class="loFeo">
+            
+            Access.Pask WEB &copy; 2022
+        
+    </div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

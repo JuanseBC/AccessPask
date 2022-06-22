@@ -36,7 +36,7 @@
 }
 
 header img {
-    width: 150px;
+    width: 160px;
     height: 120px;
     border-radius: 10px;
     margin-left: 2%;
@@ -74,7 +74,7 @@ ul li a {
     font-weight: 500;
     font-size: 23px;
     text-align: center;
-    margin-left: 80%;
+    margin-left: 85%;
 }
 
 ul li a:hover {
@@ -83,8 +83,11 @@ ul li a:hover {
 }
 
 .nom {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
     text-align: center;
-    font-size: 20px;
 }
 main {
     text-align: center;
@@ -96,14 +99,19 @@ main h2 {
 }
 
 main table {
-    width: 95%;
+    width: 70%;
     margin: 20px;
+    margin-left:15%;
+    margin-top: 5%;
+    
 }
 
 main table td,
 th {
     height: 30px;
-    border-bottom: 1px solid
+    border-bottom: 1px solid;
+    border-color: #ffd000;
+   
 }
 
 .btn {
@@ -127,4 +135,21 @@ th {
 .btn:hover {
     background-color: rgba(0, 0, 0, 0.472);
     color: #fff;
+}
+.listmaes{
+   width: 60px;
+   height: 50px;
+   text-align: right;
+
+}
+.text1{
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.loFeo{
+    text-align: center;
+    color:black;
+    margin-top: 20%;
+    margin-bottom: 2%;
 }

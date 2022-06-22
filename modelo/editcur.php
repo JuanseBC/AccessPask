@@ -12,7 +12,7 @@ $row=mysqli_fetch_array($query);
 
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="../stylos/editar2.css">
+<link rel="stylesheet" type="text/css" href="../stylos/editar3.css">
     <head>
         <title></title>
         <meta charset="UTF-8">
@@ -33,10 +33,8 @@ $row=mysqli_fetch_array($query);
                                 <input type="text" class="text1" name="documento" placeholder="Digite su documento" value="<?php echo $row['documento']  ?>">
                                 <input type="text"  class="text1" name="idCur" placeholder="Digite su curso" value="<?php echo $row['idCurso']  ?>">
                                 <br><br>
-                                <center>
-                                <a class="boton" href="../vistas/Cursos.php">Regresar</a><br>
-                                </center><br>
-                                <button class="Actu" type="submit"  value="submit" >Actualizar</button> 
+                                <button class="Actu" type="submit"  value="submit" >Actualizar</button> <br>
+                                <a class="boton" href="../controlador/conMaes.php">Regresar</a>
                            
                            
                  

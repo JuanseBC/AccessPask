@@ -4,7 +4,7 @@ $nombre=$_POST["nombre"];
 $apellido=$_POST["apellido"];
 $fecha=$_POST["fecha"];
 $descripcion=$_POST["descripcion"];
-$docu=$_POST["doc"];
+$docu=$_POST["documento"];
 $curso=$_POST["curso"];
 if($_FILES["subirarchivo"]){
     $nombre_base=basename($_FILES["subirarchivo"]["name"]);

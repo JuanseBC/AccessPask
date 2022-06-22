@@ -1,40 +1,31 @@
+<?php include("../formatos/cerrse.php");          ?>
+
 <!DOCTYPE html>
 <html lang="es">
+<link rel="stylesheet" type="text/css" href="../stylos/excusa2.css">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulario de excusa</title>
-    <link href="../stylos/excusa.css" rel="stylesheet" type="text/css">
+    <title>Access Pask</title>
+    <link rel="icon" type="img" href="../img/pask.png" size="any">
+    
 </head>
 
-<body style="background: rgb(255,244,0);
-background: linear-gradient(180deg, rgba(255,244,0,1) 0%, rgba(0,0,0,1) 100%);">
-    <center>
-        <div>
-            <div id="principal">
-                <h1>EXCUSA</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="MAT.php">Regresar </a></li>
-                    <li><a href="">Ayuda </a> </li>
-                    <li><a href="../modelo/cerrar_sesion.php">Cerrar Sesion </a> </li>
-                </ul>
-            </nav>
+<body>
+   
 
-            <form action="../modelo/excusa.php" method="post" enctype="multipart/form-data">
+            <form action="../modelo/excusa.php" method="post" class="form"  > <!-- enctype="multipart/form-data"  -->
 
-                <h1>formulario de excusa</h1>
-                <div>
-                    <div class="formulario">
-                        <label for="username">
-                    <h4>Curso <input type="text" name="curso" required></h4>
-                    <span> documento</span>
-                     <input id="documento" type="text" name="doc" required>
-                      <abbr title="required" aria-label="required">*</abbr><br><br>
-              </label>
+            <div class="text">
+                     FORMULARIO EXCUSA
+                    </div>
+               
+                    
+                    <div class="text1">Curso  <input type="text" class="insert" name="curso" placeholder="Ej: 601" required></div>
+                    <div class="text1">Documento <input type="text" class="insert" name="documento" placeholder="Ej: 111111111" required></div>
+                   <!--  
                         <label for="username">
                 <span> Nombre</span>
                  <input id="nombre" type="text" name="nombre" required>
@@ -50,7 +41,7 @@ background: linear-gradient(180deg, rgba(255,244,0,1) 0%, rgba(0,0,0,1) 100%);">
                    <input id="fecha" type="date" name="fecha" required>
                     <abbr title="required" aria-label="required">*</abbr><br><br>
             </label>
-                    </div>
+                    </div> -->
                     <center>
                         <label id="nombre" for="username">
                      <span>descripcion</span></label><br>
