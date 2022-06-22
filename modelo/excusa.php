@@ -15,7 +15,7 @@ if($_FILES["subirarchivo"]){
          '$fecha', '$descripcion', '$ruta','$docu', '$curso')";
          $resultado = mysqli_query($conexion,$insertar);
          if($resultado){
-             echo "<script>alert('se ha enviado su excusa');window.location='../vistas/excusa.php'</script>";
+             echo "<script>alert('se ha enviado su excusa');window.location='../vistas/EST.php'</script>";
 
          }else{
             echo"<scrip>alert('error al subir, digite nuevamente');window.location='../vistas/excusa.html'</scrip>";

@@ -16,8 +16,7 @@
 <body>
 <class="scroll"> 
 
-            <form action="../modelo/excusa.php" method="post" class="form"  > <!-- enctype="multipart/form-data"  -->
-
+            <form action="../modelo/excusa.php" method="post" class="form" enctype="multipart/form-data"  > 
             <div class="text">
                      FORMULARIO EXCUSA
                     </div>
@@ -31,7 +30,7 @@
                     <div class="text1">Descripción</div><textarea name="descripcion" class="insert1" rows="10" cols="40" required></textarea> 
                         <input class="env" type="file"  value ="submit" name="subirarchivo" required>
                         <br><br>
-                        <button class="Actu" type="submit"   value="enviar" >Enviar</button> <br>
+                        <input class="Actu" type="submit"   value="Enviar" ><!-- Enviar --> <br>
                         
                 </div>
             </form><br>

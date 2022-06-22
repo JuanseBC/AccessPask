@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Access Pask</title>
         <link rel="icon" type="img" href="../img/pask.png" size="any">
-    <link rel="stylesheet" type="text/css" href="../stylos/mirEx.css">
+    <link rel="stylesheet" type="text/css" href="../stylos/mirEx1.css">
     </head>
     <body>
     <main>
@@ -15,7 +15,7 @@
         </div>
     <table>
             <tr>
-			<th class= "text1">Nombres y apellidos</th>
+			<th class= "text1">Nombres y Apellidos</th>
             <th class= "text1">Fecha</th>
             <th class= "text1">Archivo</th>
             </thead>
@@ -26,7 +26,7 @@
             </tr>
         <td> <?php echo  $dato['nombre'] ." ". $dato['apellido'] ; ?> </td>
         <td> <?php echo  $dato['fecha']   ; ?> </td>
-        <td> <?php echo "<img  src='" . $dato['archivo'] . "'>";?></td></tr>
+        <td> <?php echo "<img class='imgsubi'src='" . $dato['archivo'] . "'>";?></td></tr>
 
         <?php } ?>
 	</table>
