@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Access Pask</title>
     <link rel="icon" type="img" href="../img/pask.png" size="any">
-    <link rel="stylesheet" href="../stylos/PRF2.css">
+    <link rel="stylesheet" href="../stylos/PRF5.css">
   
 </head>
 <body>
@@ -25,7 +25,7 @@
         <li><a href="../modelo/cerrar_sesion.php" img src="../img/salir.png">Salir</a> </li>
         
     </ul>
-    <h2 class="nom">Bienvenido maestro</h2>
+    <div class="nom">Bienvenido maestro<img class="listmaes1" src="../img/maestro.jpg"></div>
 
     </header>
     <main>
@@ -59,7 +59,7 @@
          $filas=mysqli_query($con, $consulta);
         ?>
         <form method="post" action="excest.php">
-        <select name="Cursos"  >
+        <select class="select" name="Cursos"  >
         <?php
          while ($cursos=mysqli_fetch_array($filas))
          {

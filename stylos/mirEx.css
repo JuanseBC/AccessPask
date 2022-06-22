@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    font-family: 'RobotoCondensed';
+}
+
+.scroll {
+    border: 1px solid;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #a09714f6;
+    border-radius: 50px
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffd000;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffd000;
+}
+.cuadro_texto {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+}
+.nom {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    margin-left: 35%;
+    margin-top: 5%;
+    background-color:#ffd000;
+    width: 35%;
+}
+.text1{
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+main {
+    text-align: center;
+    margin: 20px;
+}
+
+main h2 {
+    margin: 20px;
+}
+
+main table {
+    width: 70%;
+    margin: 20px;
+    margin-left:15%;
+    margin-top: 5%;
+}
+
+main table td,
+th {
+    height: 30px;
+    border-bottom: 1px solid;
+    border-color: #ffd000;
+   
+}
+.listmaes{
+    width: 60px;
+    height: 50px;
+    text-align: right;
+ 
+ }
+ .boton {
+    border: 1px solid #ffd000;
+    padding: 10px;
+    background-color: #ffd000;
+    color: black;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-size: 15px;
+    border-radius: 30px;
+    display: inline-block;
+}
