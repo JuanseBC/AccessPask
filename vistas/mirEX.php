@@ -28,7 +28,8 @@
         <td> <?php echo  $dato['nombre'] ." ". $dato['apellido'] ; ?> </td>
         <td> <?php echo  $dato['fecha']   ; ?> </td>
         <td> <?php echo  $dato['descripcion']   ; ?> </td>
-        <td> <?php echo "<img class='imgsubi'src='" . $dato['archivo'] . "'>";?></td></tr>
+        
+        <td> <?php echo "<embed  class='imgsubi' src='" . $dato['archivo'] . "'>";?></td></tr> 
 
         <?php } ?>
 	</table>
