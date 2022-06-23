@@ -19,8 +19,6 @@
     <div class="menu">
       <center>
         <ul>
-          <li><a href="ADM.php">
-              Inicio</a></li>
           <li><a href="../vistas/Cursos.php">
               Cursos</a></li>
           <li><a href="../controlador/ConMaes.php">

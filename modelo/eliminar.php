@@ -7,5 +7,5 @@ $q="UPDATE usuario SET idEst = 2 WHERE usuario.documento = $id2";
 $borrar=mysqli_query($con, $q);
 if($borrar){
     echo"Registro inactivado";
-    Header("Location: ../vistas/ADM.php");
+    Header("Location: ../vistas/Cursos.php");
 }

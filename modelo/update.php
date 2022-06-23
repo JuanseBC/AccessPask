@@ -13,6 +13,6 @@ $sql="UPDATE usuario SET  Nombre='$Nombre', Apellido='$Apellido',documento='$Doc
 $query=mysqli_query($con,$sql);
 
     if($query){
-        Header("Location: ../vistas/ADM.php");
+        Header("Location: ../vistas/Cursos.php");
     }
 ?>

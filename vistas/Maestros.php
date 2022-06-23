@@ -22,8 +22,6 @@
       <center>
       
         <ul>
-          <li><a href="../vistas/ADM.php">
-              Inicio</a></li>
           <li><a href="../vistas/Cursos.php">
               Cursos</a></li>
           <li><a href="../controlador/ConMaes.php">
@@ -59,7 +57,9 @@
             Listado de Maestros
             </div>
                
-                <form method="POST" action="../vistas/busma.php"> <input type="text" name='Filtro' required> <input type="image" src="../img/lupa.png" width="3%"></form>
+              <form method="POST" action="../vistas/busma.php"> <input type="text" name='Filtro' required> <input type="image" src="../img/lupa.png" width="3%">
+              <a class="boton" href="../vistas/activarPRF.php">Activar usuario</a>
+              </form>
                 <table class="table">
                     <tr>
                         <td class= "text2">Nombre</td>
