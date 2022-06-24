@@ -12,7 +12,7 @@ if ($nr==1){
         $_SESSION['usuario'] = $doc;
 
 
-      header("location: ../vistas/ADM.php");       
+      header("location: ../vistas/Cursos.php");       
    }
     else if ($rol==2){
     /*echo "<script>window.location='../vistas/PRF.html' </script>";*/
