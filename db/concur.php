@@ -6,6 +6,6 @@ VALUES('".$_POST["Doc"]."', '".$_POST["documento"]."',  '".$_POST["Rol"]."',  '"
 $resultado=mysqli_query ($con,$sql) ;
 mysqli_close($con);
 if($resultado){
-    header("location:../vistas/ADM.php");
+    header("location:../vistas/Cursos.php");
 }
 ?>

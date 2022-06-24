@@ -58,8 +58,8 @@
           N° Documento
       </div>
       <input type="text" name="documento" placeholder="Número" class="doc3"required>
-      <label for="doc" class="doc-text">Tipo de correo</label>
-      <select name="Doc" id="doc" required class="select doc">
+      <label for="TC" class="doc-text">Tipo de correo</label>
+      <select name="TC" id="TC" required class="select doc">
         <option selected disabled value="">Tipo de correo </option>
         <option value="1"> Instituciona</option>
         <option value="2"> Personal</option>
@@ -76,7 +76,7 @@
       </div>
       <div class="menu"> <br>
         <ul>
-          <li><a href="../vistas/ADM.php">
+          <li><a href="../vistas/Cursos.php">
                   Regresar</a></li>
         </ul>
       </div>

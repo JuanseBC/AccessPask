@@ -84,7 +84,7 @@
       </div>
       <div class="menu"> <br>
         <ul>
-          <li><a href="../vistas/ADM.php">
+          <li><a href="../vistas/Cursos.php">
                   Regresar</a></li>
         </ul>
       </div>

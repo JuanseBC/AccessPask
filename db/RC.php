@@ -6,6 +6,6 @@ $resultado=mysqli_query ($con,$sql) ;
 mysqli_close($con);
 
 if($resultado){
-    header("location:../vistas/ADM.html");
+    header("location:../vistas/Cursos.php");
 }
 ?>
