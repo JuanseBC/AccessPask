@@ -19,7 +19,6 @@
     <div class="menu">
             <center>
             <ul>
-          <li><a href="../vistas/ADM.php">Inicio</a></li>
           <li><a href="../vistas/Cursos.php">Cursos</a></li>
           <li><a href="../controlador/ConMaes.php">Maestros</a></li>
           <li><a  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Registro</a></li>

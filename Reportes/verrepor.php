@@ -13,25 +13,34 @@
         <TR style="width: 1330px ;">
             <center>
            <h2>reportes de los estudiantes<h2>
-            <td style="width: 1330px ;">Documento</td>
-            <td style="width: 1330px ;">hora de ingreso</td>
-            <td style="width: 1330px ;">hora de salida</td>
+            <td style="width: 133px ;">Documento</td>
+            <td style="width: 133px ;">Nombre</td>
+            <td style="width: 133px ;">Apellido</td>
+            <td style="width: 133px ;">Fecha</td>
+            <td style="width: 133px ;">hora de ingreso</td>
+            <td style="width: 133px ;">hora de salida</td>
+
             <center>
 
         </TR>
 
         <?php foreach ($pro as $dato) {?>
 
-        <tr style="width: 1330px ;">   
-        <td style="width: 1330px ;"> <?php echo  $dato['documento'] ?></td>  
-        <td style="width: 1330px ;"> <?php echo  $dato['hin']  ?></td>
-        <td style="width: 1330px ;"> <?php echo  $dato['hsa']  ?></td>
+        <tr style="width: 133px ;">   
+        <td style="width: 133px ;"> <?php echo  $dato['documento'] ?></td>  
+        <td style="width: 133px ;"> <?php echo  $dato['Nombre']  ?></td>
+        <td style="width: 133px ;"> <?php echo  $dato['Apellido']  ?></td>
+        <td style="width: 133px ;"> <?php echo  $dato['Fecha']  ?></td>   
+        <td style="width: 133px ;"> <?php echo  $dato['hin']  ?></td>
+        <td style="width: 133px ;"> <?php echo  $dato['hsa']  ?></td>
+
+        
+
     
         <?php } ?>
-    <a  href="../Reportes/pdf.php"><i class="fa fa-download"></i> Descargar archivo PDF</a>
+    <a  href="../Reportes/pdf.Zphp"> Descargar archivo PDF</a>
     </table>
 </section>
 </center>
 </body>
-</html>
-
+</html>		

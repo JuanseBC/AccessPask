@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 <link rel="stylesheet" type="text/css" href="../stylos/activar1.css">
+=======
+<link rel="stylesheet" type="text/css" href="../stylos/ADM15.css">
+>>>>>>> feeaf652c5fe80f163684b9e8a80bdfd993406d6
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,11 +15,16 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
+<<<<<<< HEAD
 <main>
     <div class="nom">
           Listado Usuarios Inactivos
         </div>
 <table>
+=======
+listado de inactivos <a class="boton" href="cursos.php">Regresar</a>
+<table  class="table table-striped">
+>>>>>>> feeaf652c5fe80f163684b9e8a80bdfd993406d6
                 <tr >
                     <td class= "text2">Nombre</td>
                     <td class= "text2"> Apellido</td>
