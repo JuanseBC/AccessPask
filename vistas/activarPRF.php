@@ -22,14 +22,13 @@ listado de inactivos <a class="boton" href="cursos.php">Regresar</a>
                 </tr>
     <?php
    $con= mysqli_connect ('localhost','root','','accesspask');
-   $consulta= "Select * from usuario where idrol=3 and idEst='2'";
+   $consulta= "Select * from usuario where idrol=2 and idEst='2'";
    $filas=mysqli_query($con, $consulta);
    while ($dato=mysqli_fetch_array($filas))
    {
        echo"<tr><td class= 'text3'>".$dato['Nombre']."</p></td>";
        echo"<td class= 'text3'>".$dato['Apellido']."</p></td>";
-       echo"<td class= 'text3'>".$dato['documento']."</p></td>"; 
-       echo"<td class= 'text3'>".$dato['idCurso']."</p></td>"; ?>
+       echo"<td class= 'text3'>".$dato['documento']."</p></td>";  ?>
      <td><a href="../modelo/activarUsu.php?id1=<?php echo $dato['documento']?>" class="btn btn-warning">Activar</a></td>
      <?php }?>
      </table>    
