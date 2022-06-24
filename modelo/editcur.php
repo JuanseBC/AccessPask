@@ -28,9 +28,13 @@ $row=mysqli_fetch_array($query);
                     </div>
                     <br>
                                 <input type="hidden" name="idusu" value="<?php echo $row['documento']  ?>">
+                                <label for="name">Nombre:</label>
                                 <input type="text"  class="text1" name="Nombre" placeholder="Digite su nombre" value="<?php echo $row['Nombre']  ?>">
+                                <label for="lastname">Apellido</label>
                                 <input type="text" class="text1" name="Apellido" placeholder="Digite su apellido" value="<?php echo $row['Apellido']  ?>">
+                                <label for="doc">Documento</label>
                                 <input type="text" class="text1" name="documento" placeholder="Digite su documento" value="<?php echo $row['documento']  ?>">
+                                <label for="cur">Curso</label>
                                 <input type="text"  class="text1" name="idCur" placeholder="Digite su curso" value="<?php echo $row['idCurso']  ?>">
                                 <br><br>
                                 <button class="Actu" type="submit"  value="submit" >Actualizar</button> <br>
