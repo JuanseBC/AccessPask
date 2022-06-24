@@ -15,7 +15,7 @@
             min="2022-01-01" max="2050-12-31">
             <br>
             <label for="fec">Hora</label> <input type="time" id="hora" name="hora" value="HH:MM:SS" >
-            <br><input type="submit">
+            <br><input type="submit" value="Generar Informe">
     </form>
 
 </center>

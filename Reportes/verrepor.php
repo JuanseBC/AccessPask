@@ -1,3 +1,6 @@
+<?php
+ob_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,12 +16,12 @@
         <TR style="width: 1330px ;">
             <center>
            <h2>reportes de los estudiantes<h2>
-            <td style="width: 133px ;">Documento</td>
-            <td style="width: 133px ;">Nombre</td>
-            <td style="width: 133px ;">Apellido</td>
-            <td style="width: 133px ;">Fecha</td>
-            <td style="width: 133px ;">hora de ingreso</td>
-            <td style="width: 133px ;">hora de salida</td>
+            <td style="width: 133px ; border:1%;">Documento</td>
+            <td style="width: 133px ; border:1%;">Nombre</td>
+            <td style="width: 133px ; border:1%;">Apellido</td>
+            <td style="width: 133px ; border:1%;">Fecha</td>
+            <td style="width: 133px ; border:1%;">hora de ingreso</td>
+            <td style="width: 133px ; border:1%;">hora de salida</td>
 
             <center>
 
@@ -27,20 +30,32 @@
         <?php foreach ($pro as $dato) {?>
 
         <tr style="width: 133px ;">   
-        <td style="width: 133px ;"> <?php echo  $dato['documento'] ?></td>  
-        <td style="width: 133px ;"> <?php echo  $dato['Nombre']  ?></td>
-        <td style="width: 133px ;"> <?php echo  $dato['Apellido']  ?></td>
-        <td style="width: 133px ;"> <?php echo  $dato['Fecha']  ?></td>   
-        <td style="width: 133px ;"> <?php echo  $dato['hin']  ?></td>
-        <td style="width: 133px ;"> <?php echo  $dato['hsa']  ?></td>
+        <td style="width: 133px ;border:1%;"><?php echo  $dato["documento"] ?></td>  
+        <td style="width: 133px ;border:1%;"><?php echo  $dato["Nombre"]  ?></td>
+        <td style="width: 133px ;border:1%;"><?php echo  $dato["Apellido"]  ?></td>
+        <td style="width: 133px ;border:1%;"><?php echo  $dato["Fecha"]  ?></td>   
+        <td style="width: 133px ;border:1%;"><?php echo  $dato["hin"]  ?></td>
+        <td style="width: 133px ;border:1%;"><?php echo  $dato["hsa"]  ?></td>
 
         
 
     
         <?php } ?>
-    <a  href="../Reportes/pdf.Zphp"> Descargar archivo PDF</a>
     </table>
 </section>
 </center>
 </body>
-</html>		
+</html>
+<?php
+
+$html= ob_get_clean();
+//echo $html;
+require_once '../libre/dompdf/autoload.inc.php';
+use Dompdf\Dompdf;
+$dompdf= new Dompdf();
+$dompdf->loadHtml($html);
+$dompdf-> setPaper('letter');
+$dompdf ->render();
+$dompdf->stream("reporte_consulta.pdf", array("Attachment" => false));
+
+?>
