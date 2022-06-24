@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Access Pask</title>
         <link rel="icon" type="img" href="../img/pask.png" size="any">
-    <link rel="stylesheet" type="text/css" href="../stylos/mirEx1.css">
+    <link rel="stylesheet" type="text/css" href="../stylos/mirEx2.css">
     </head>
     <body>
     <main>
