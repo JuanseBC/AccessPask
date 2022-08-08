@@ -88,6 +88,36 @@
         font-family: 'RobotoCondensed';
         overflow: hidden;
       }
+      .boton{
+    border: 1px solid #ffd000;
+    padding: 10px;
+    background-color: #8d876d;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-size: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 45%;
+    margin-top: 10%;
+}
+.boton1{
+    border: 1px solid #ffd000;
+    padding: 10px;
+    background-color: #8d876d;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-size: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 45%;
+    margin-top: 5%;
+}
   
     </style>
 </head>
@@ -118,12 +148,27 @@
                 Ingresar</p>
             </h4>
           </a></li>
-          <li><a href="../ReIngreso/horainsa.html">
-            <h4>
-              <p style="color: white; font-family:cursive; font-style: oblique; font-weight: 1000; font: size 60px;">
-                Registro Ingreso</p>
-            </h4>
-          </a></li>
+          <li > <a  data-bs-toggle="modal" data-bs-target="#exampleModalCenter" style="color: white; font-family:cursive; font-style: oblique; font-weight: 1000; font: size 60px;" > <h4>
+            Ingresar Registro </h4> </a></li>
+            
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" >
+              <div class="modal-content" >
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle" style=" font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:black; text-align: center;"> Registrar</h5>
+                    <button type="button"  class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <center>
+                  <h3>Eliga que tipo de registro utilizar</h3>
+                </center>
+                <a class="boton" href="../ReIngreso/ingreso.php">Registro de Ingreso</a></th>
+
+                <a class="boton1" href="../ReIngreso/salida.php"> Registro de Salida</a></th>
+                       </div>
+              </div>
+            </div>
+          </div>
       </ul>
     </center>
 

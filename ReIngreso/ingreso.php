@@ -16,7 +16,7 @@ date_default_timezone_set('America/bogota');
  date("Y-m-d ");
  ?>
  <center>
- <form method="POST" action="../c/ing.php" accept-charset="UTF-8"> 
+ <form method="POST" action="../controlador/ing.php" accept-charset="UTF-8"> 
  <label >fecha: <input type="text" name="fe" value="<?php echo  date("Y-m-d ") ?>"></input></label><br>
  <label >hora de ingreso: <input type="text" name="hoIn" value="<?php echo date("g:i A")?>"></input></label><br>
  <label >documento: <input type="text" name="docu" value=""></imput></label><br>
