@@ -52,21 +52,22 @@
                 $con=mysqli_connect($host,$user,$pass);
         
                 mysqli_select_db($con,$bd);
-         $consulta= "Select * from excusas where curso=$curso ";
+         $consulta= "Select * from usuario where idCurso=$curso ";
          $filas=mysqli_query($con, $consulta);
         
          while ($dato=mysqli_fetch_array($filas))
         {
-            echo"<tr><td>".$dato['nombre']."</p></td>";
-            echo"<td>".$dato['apellido']."</p></td>";
+            echo"<tr><td>".$dato['Nombre']."</p></td>";
+            echo"<td>".$dato['Apellido']."</p></td>";
             echo"<td>".$dato['documento']."</p></td>"; 
-            echo"<td>".$dato['curso']."</p></td>";
+            echo"<td>".$dato['idCurso']."</p></td>";
             ?>
             <td><a href="../controlador/buscar.php?id=<?php echo $dato['documento']?>" class="btn">Ver excusa</a></td></tr>
             <?php }?>
             </tbody>
      </table>    
-       
+                   <td><a href="../Reportes/rep2.php" class="btn">Generar informe</a></td></tr>
+
    
      
 </body>

@@ -2,14 +2,17 @@
   include("../db/db1.php");
     $con=conexion();
 
-      $fecha=$_POST['fec'];
-      $hora=$_POST['hora'];
+      $fecha1=$_POST['fec1'];
+      $fecha2=$_POST['fec2'];
 
-             $consu= "SELECT tiempo.documento,usuario.Nombre,usuario.Apellido,tiempo.Fecha,tiempo.hin,tiempo.hsa FROM tiempo,usuario where tiempo.Fecha='$fecha' and tiempo.hin='$hora' and tiempo.documento=usuario.documento";
-    
-             $fi=mysqli_query($con, $consu);
+      $hora1=$_POST['hora1'];
+      $hora2=$_POST['hora2'];
+
+      $sele=$_POST['Cursos'];
+
+
              
-            $pro=$fi;
-    include("../Reportes/verrepor.php");
+           
+    include("../Reportes/ind.php");
             
  ?>

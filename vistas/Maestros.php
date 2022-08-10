@@ -75,11 +75,33 @@
             echo"<td class= 'text3'>".$dato['documento']."</p></td>"; 
             echo"<td class= 'text3'>".$dato['correo']."</p></td>";
             ?>
+
+               <td><a href="../controlador/asig.php?id2=<?php echo $dato['documento']?>" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#static">
+            Asignar Curso</a><td>
+
+                          <div class="modal fade" id="static" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+       <div class="modal-content " style="background-color:black; border-radius:15px;">
+        <button type="button" style="background-color:white; position:right;"  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         <center>
+         <div  style="background-color: black; height:27px ">
+        <h5  id="staticBackdropLabel" style="color: white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:white" >Asignar</h5>
+      </div>
+    </center>
+      <div  style="background-color: #ffd000;  border-radius:15px ;">
+       <?php include("AsignarCu.php"); ?>
+
+        </div>
+
+  </div>
+</div>
+
                             <td><a href="../modelo/editar.php?id=<?php echo $dato['documento']?>" class="btn btn-warning">Editar</a></td>
                             <td><a href="../modelo/eliminar.php?id1=<?php echo $dato['documento']?>" class="btn btn-outline-danger">Inactivar</a></td><tr>
                             <?php }
             }?>
                 </table></center></div>
+                   <td><a href="../Reportes/ind4.php" class="btn">Generar informe</a></td></tr>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

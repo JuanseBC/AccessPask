@@ -29,8 +29,7 @@
         <td> <?php echo  $dato['fecha']   ; ?> </td>
         <td> <?php echo  $dato['descripcion']   ; ?> </td>
         
-        <td> <?php echo "<embed  class='imgsubi' src='" . $dato['archivo'] . "'>";?></td></tr> 
-
+<td> <?php echo "<a class='boton' href ='". $dato['archivo'] ."'>visualizar excusa</a>" ;?></td>
         <?php } ?>
 	</table>
     <a class="boton" href="../vistas/PRF.php">Regresar</a>

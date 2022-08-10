@@ -49,13 +49,14 @@
             Seleccione un curso
         </div>
         <?php
+        $fifa=$_SESSION["usuario"];
         $host="localhost";
         $user="root";
         $pass="";
         $bd="accesspask";
         $con=mysqli_connect($host,$user,$pass);
         mysqli_select_db($con,$bd);
-         $consulta= "Select idCurso from cursos_ ";
+         $consulta= "Select Curso from asignacion where $fifa=docu ";
          $filas=mysqli_query($con, $consulta);
         ?>
         <form method="post" action="excest.php">
@@ -63,7 +64,7 @@
         <?php
          while ($cursos=mysqli_fetch_array($filas))
          {
-           echo "<option>" . $cursos["idCurso"] . "</option>";
+           echo "<option>" . $cursos["Curso"] . "</option>";
          }
        ?>
     </select>

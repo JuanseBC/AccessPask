@@ -48,6 +48,8 @@
         <div class="listado">
           Listado de Estudiantes
         </div>
+        <h2>Bienvenido:</h2>
+
             <form method="POST" action="../vistas/busqueda.php"> <input type="text" name='Filtro'>  <input type="image" src="../img/lupa.png" width="3%" ></form>
             <table  class="table table-striped">
                 <tr >
@@ -85,7 +87,8 @@
      </table>    
         </center>
     </div>
- 
+                    <td><a href="../Reportes/rep2.php" class="btn">Generar informe</a></td></tr>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

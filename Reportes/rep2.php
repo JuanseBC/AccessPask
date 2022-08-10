@@ -10,16 +10,8 @@
 </head>
 <body>
     <center>
- <form action="../controlador/report.php" method="post" >
+ <form action="../controlador/report2.php" method="post" >
         <h1>Modulo de reportes</h1>
-        <h2><label for="start">Fecha desde</label> <input type="text" id="start" name="fec1"
-            value="dd-mm-aaaa"
-            min="2022-01-01" max="2050-12-31">
-            <label for="start">Fecha hasta</label> <input type="text" id="start" name="fec2"
-            value="dd-mm-aaaa"
-            min="2022-01-01" max="2050-12-31">
-            <label for="fec">Hora desde</label> <input type="text" id="hora" name="hora1" value="HH:MM:SS" >
-            <label for="fec">Hora hasta</label> <input type="text" id="hora" name="hora2" value="HH:MM:SS" >
             <?php
         $host="localhost";
         $user="root";

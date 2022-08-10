@@ -1,6 +1,3 @@
-<?php
-ob_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,15 +44,3 @@ ob_start();
 </body>
 </html>
 <?php
-
-$html= ob_get_clean();
-//echo $html;
-require_once '../libre/dompdf/autoload.inc.php';
-use Dompdf\Dompdf;
-$dompdf= new Dompdf();
-$dompdf->loadHtml($html);
-$dompdf-> setPaper('letter');
-$dompdf ->render();
-$dompdf->stream("reporte_consulta.pdf", array("Attachment" => false));
-
-?>

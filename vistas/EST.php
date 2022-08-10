@@ -69,6 +69,7 @@
   
 
         </main>
+                   <td><a href="../Reportes/ind3.php" class="btn">Generar informe</a></td></tr>
 
         <div class="loFeo">
             

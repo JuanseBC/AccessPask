@@ -1,5 +1,5 @@
 <?php
-include '../Reingreso/salida.php';
+include '../v/salida.php';
 $conexion=mysqli_connect('localhost','root','','accesspask');
 
 $fecha =$_POST['fech'];
@@ -18,10 +18,10 @@ foreach ($ejecut as $key) {
         $ejecu = mysqli_query ($conexion,$consul);   
       }}
         if($ejecu){
-            echo"<script>alert('su registro fue exitoso ');window.location='../Reingreso/salida.php'</script>";
+            echo"<script>alert('su registro fue exitoso come back bro');window.location='../v/salida.php'</script>";
         
         } else {
-            echo"<script>alert('su registro no fue exitoso vuelva a escribir el numero de documento');window.location='../Reingreso/salida.php'</script>";
+            echo"<script>alert('vales monda no servis ni para escribir un numero');window.location='../v/salida.php'</script>";
 
         }
          
