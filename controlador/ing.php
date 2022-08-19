@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 include '../v/ingreso.php';
 $conexion=mysqli_connect('localhost','root','','accesspask');
 
@@ -16,10 +17,10 @@ foreach ($ejecut as $key) {
 $ejecutar = mysqli_query ($conexion,$consulta);
     }}
         if($ejecutar){
-            echo"<script>alert('su registro fue exitoso come back bro');window.location='../v/ingreso.php'</script>";
+            echo"<script>alert('su registro fue exitoso come back bro');window.location='../ReIngreso/ingreso.php'</script>";
         
         } else {
-            echo"<script>alert('vales monda no servis ni para escribir un numero');window.location='../v/ingreso.php'</script>";
+            echo"<script>alert('vales monda no servis ni para escribir un numero');window.location='../Reingreso/ingreso.php'</script>";
 
         }
          

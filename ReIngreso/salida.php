@@ -20,7 +20,7 @@ date_default_timezone_set('America/bogota');
  <label >fecha: <input type="text" name="fech" value="<?php echo  date("Y-m-d ") ?>"></input></label><br>
  <label >hora de salida: <input type="text" name="hoSa" value="<?php echo date("g:i A")?>"></input></label><br>
  <label >documento: <input type="text" name="documen" value=""></imput></label><br>
- <input type="submit" name="enviar" value="registrar ingreso"></imput>
+ <input type="submit" name="enviar" value="registrar salida"></imput>
  </center>
 
 
