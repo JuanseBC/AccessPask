@@ -66,7 +66,7 @@
         <td> <?php echo  $dato['Nombre'] ." ". $dato['Apellido'] ; ?> <br><br></td> 
         <td> <?php echo  $dato['correo'] ." " ?> <br><br></td>
         
-        <td> <a href="../vistas/excusa.php?id4=<?php echo $dato['documento']?>" class="btn btn-warning">Excusa</li><br><br></td>
+        <td> <a href="../vistas/excusa.php?id4=<?php echo $dato['documento']?>" class="btn btn-warning">Enviar Excusa</li><br><br></td>
 </tr>
         <?php } ?>
         </tbody>
