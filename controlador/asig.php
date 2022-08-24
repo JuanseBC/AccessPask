@@ -18,7 +18,7 @@ if($SD<>$l or $sele<>$v){
     $sol="INSERT INTO asignacion(docu,Curso)
     VALUES('$SD','$sele')";
     $resultado=mysqli_query($con,$sol);
-    echo "<script>alert('la asignacion fue un exito SIUUUUUUUUUUUUUUUUUUUu'); window.location= '../controlador/ConMaes.php';</script>";
+    echo "<script>alert('la asignacion fue realizo correctamente'); window.location= '../controlador/ConMaes.php';</script>";
 
     }
     else{
