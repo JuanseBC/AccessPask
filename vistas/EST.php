@@ -21,9 +21,10 @@
 
     <ul>
 
-        <li><a href="../vistas/excusa.php">Excusa</a></li>
+       
         <li><a href="../modelo/cerrar_sesion.php" img src="../img/salir.png">Salir</a> </li>
-        
+                <li><a href="../Reportes/ind3.php"  style="left: 130%;position: absolute;padding-bottom: 29px;">Generar informe</a></li>
+
         
         
     </ul>
@@ -53,23 +54,26 @@
         <tr >
             <th class="text1">Nombre y Apellido</th>
             <th class="text1">Correo</th>
+            <th class="text1">Excusa</th>
            
         </tr>
         </thead>
         <tbody>
         <?php foreach ($produc as $dato) {?>
 
-        <tr>   
-        <td> <?php echo  $dato['Nombre'] ." ". $dato['Apellido'] ; ?> </td>
-        <td> <?php echo  $dato['correo'] ." " ?> </td>
-
+        <tr> 
+             
+        <td> <?php echo  $dato['Nombre'] ." ". $dato['Apellido'] ; ?> <br><br></td> 
+        <td> <?php echo  $dato['correo'] ." " ?> <br><br></td>
+        
+        <td> <a href="../vistas/excusa.php?id4=<?php echo $dato['documento']?>" class="btn btn-warning">Excusa</li><br><br></td>
+</tr>
         <?php } ?>
         </tbody>
     </table>
   
 
         </main>
-                   <td><a href="../Reportes/ind3.php" class="btn">Generar informe</a></td></tr>
 
         <div class="loFeo">
             

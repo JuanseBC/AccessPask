@@ -87,7 +87,22 @@
      </table>    
         </center>
     </div>
-                    <td><a href="../Reportes/rep2.php" class="btn">Generar informe</a></td></tr>
+                    <td><a  class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#static">Generar informe</a></td></tr>
+                    <div class="modal fade" id="static" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+       <div class="modal-content " style="background-color:black; border-radius:15px;">
+        <button type="button" style="background-color:white; position:right;"  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         <center>
+         <div  style="background-color: black; height:45px ">
+        <h5  id="staticBackdropLabel" style="color: white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:white" >Informes</h5>
+      </div>
+    </center>
+      <div  style="background-color: #ffd000;  border-radius:15px;">
+       <?php include("../Reportes/rep2.php"); ?>
+       <br><br>
+    </div>
+  </div>
+</div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

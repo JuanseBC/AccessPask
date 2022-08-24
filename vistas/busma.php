@@ -76,7 +76,7 @@
                 $con=mysqli_connect($host,$user,$pass);
         
                 mysqli_select_db($con,$bd);
-         $consulta= "Select * from usuario where idrol=2 and documento=$buscar";
+         $consulta= "Select * from usuario where idrol=2 and documento<>$buscar";
          $filas=mysqli_query($con, $consulta);
         
          while ($dato=mysqli_fetch_array($filas))

@@ -37,7 +37,7 @@
 
             
 
-            <br><input type="submit" value="Generar Informe">
+            <br><br><input type="submit" value="Generar Informe">
     </form>
 
 </center>

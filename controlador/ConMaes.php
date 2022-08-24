@@ -19,4 +19,5 @@ class Conectar{
 
     //Llamada a la vista
     require_once("../vistas/Maestros.php");
+    
 ?> 

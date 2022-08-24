@@ -21,6 +21,7 @@
             <th class= "text1">Archivo</th>
             </thead>
             <tbody>
+        
 		   <?php foreach ($produc as $dato) {
            
             ?>

@@ -6,13 +6,14 @@ $fecha=$_POST["fecha"];
 $descripcion=$_POST["descripcion"];
 $docu=$_POST["documento"];
 $curso=$_POST["curso"];
+$s11=$_POST['dc'];
 if($_FILES["subirarchivo"]){
     $nombre_base=basename($_FILES["subirarchivo"]["name"]);
      $ruta = "../img/" . $nombre_base;
      $subir_archivo = move_uploaded_file($_FILES["subirarchivo"]["tmp_name"],$ruta);
      if($subir_archivo){
-         $insertar ="insert into excusas(nombre,apellido,fecha,descripcion,archivo,documento, curso) values ('$nombre','$apellido', 
-         '$fecha', '$descripcion', '$ruta','$docu', '$curso')";
+         $insertar ="insert into excusas(nombre,apellido,fecha,descripcion,archivo,documento, curso ,Docu_Dest) values ('$nombre','$apellido', 
+         '$fecha', '$descripcion', '$ruta','$docu', '$curso','$s11')";
          $resultado = mysqli_query($conexion,$insertar);
          if($resultado){
              echo "<script>alert('se ha enviado su excusa');window.location='../vistas/EST.php'</script>";
