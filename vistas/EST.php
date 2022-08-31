@@ -32,6 +32,7 @@
     <main>
 
     <?php
+        $des=$_SESSION['usuario'];
         $host="localhost";
         $user="root";
         $pass="";
@@ -39,11 +40,18 @@
         $con=mysqli_connect($host,$user,$pass);
         mysqli_select_db($con,$bd);
 
-        $consulta= "SELECT * FROM usuario where idRol=2";
+        $cons= "SELECT idCurso FROM usuario where documento='$des'";
+        $fil=mysqli_query($con, $cons);
+
+        $Almacen_user_consul=mysqli_fetch_row($fil);
+        $resultado=$Almacen_user_consul[0];
+
+        $consulta= "SELECT * FROM usuario,asignacion where idRol=2 and usuario.documento=asignacion.docu and asignacion.Curso=$resultado";
 
         $filas=mysqli_query($con, $consulta);
 
         $produc=$filas; 
+
         ?> 
 
         <div class="nom"><img class="listmaes" src="../img/maestro.jpg">
@@ -67,7 +75,7 @@
         <td> <?php echo  $dato['correo'] ." " ?> <br><br></td>
         
         <td> <a href="../vistas/excusa.php?id4=<?php echo $dato['documento']?>" class="btn btn-warning">Enviar  Excusa</li><br><br></td>
-</tr>
+        </tr>
         <?php } ?>
         </tbody>
     </table>
