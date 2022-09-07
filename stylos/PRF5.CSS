@@ -43,6 +43,14 @@ header img {
     margin-left: 2%;
     margin-top: 1%;
 }
+.iconos {
+    position: absolute;
+    height: auto;
+    left: 2%;
+    right: 0%;
+    top: 5%;
+}
+
 .cuadro_texto2{
    
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -54,43 +62,38 @@ header img {
         
     }
 
-ul {
-    display: inline;
-    position: absolute;
-    margin-top: 1px
-  
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.cuadro_texto li {
-    margin: 20px;
+.menu ul li {
     display: inline-block;
 }
 
-.cuadro_texto ul {
-    list-style: none;
-}
-
-ul li a {
+.menu ul li a {
     color: #ffd000;
     display: inline-block;
     padding: 5px 35px;
     text-decoration: none;
     background-color: #ffd000;
     border-radius: 30px;
-    width: 150px;
-    height: 40px;
+    width: 170px;
+    height: 60px;
     color: rgb(0, 0, 0);
     font-family: cursive;
     font-style: oblique;
     font-weight: 500;
     font-size: 23px;
     text-align: center;
-    margin-left: 85%;
+   
+
 }
 
-ul li a:hover {
+.menu ul li a:hover {
     background-color: rgba(0, 0, 0, 0.472);
-    color: #fff;
 }
 
 

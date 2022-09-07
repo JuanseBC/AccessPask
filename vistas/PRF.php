@@ -17,6 +17,11 @@
 
     <header class="cuadro_texto">
         <img src="../img/pask.png" alt="logo accespask">
+        <div class="iconos">
+        <div class="menu">
+      <center>
+        <ul> 
+
         
 
     <ul>
@@ -95,7 +100,7 @@
                 Access.Pask WEB &copy; 2022
             
         </div>
-
+      
     <script src="../js/modal1.js"></script>
 
 </body>
