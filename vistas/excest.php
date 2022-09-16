@@ -45,15 +45,16 @@
                 </thead>
                 <tbody>
                 <?php
-                $curso= $_POST["Cursos"];           
+                $curso= $_GET["id"];           
                 $host="localhost";
                 $user="root";
                 $pass="";
                 $bd="accesspask";
                 $con=mysqli_connect($host,$user,$pass);
+      
         
                 mysqli_select_db($con,$bd);
-         $consulta= "Select * from usuario where idCurso=$curso  ";
+         $consulta= "Select * from usuario where idCurso=$curso";
          $filas=mysqli_query($con, $consulta);
         
          while ($dato=mysqli_fetch_array($filas))
