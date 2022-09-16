@@ -8,4 +8,7 @@ mysqli_close($con);
 if($resultado){
     header("location:../vistas/Cursos.php");
 }
+else {
+    echo "<script>alert('Algun dato es incorrecto o ya existe el usuario '); window.location= '../vistas/Cursos.php';</script>";
+}
 ?>
