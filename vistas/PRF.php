@@ -11,7 +11,8 @@
     <title>Access Pask</title>
     <link rel="icon" type="img" href="../img/pask.png" size="any">
     <link rel="stylesheet" href="../stylos/PRF5.css">
-  
+    <link rel="stylesheet" href="../stylos/siuu.css">
+
 </head>
 <body>
 
@@ -30,28 +31,28 @@
         <li><a href="../modelo/cerrar_sesion.php" img src="../img/salir.png">Salir</a> </li>
         
     </ul>
-    <div class="nom">Bienvenido maestro<img class="listmaes1" src="../img/maestro.jpg"></div>
+    <?php
+     $rol=$_SESSION['usuario'];
+       $host="localhost";
+       $user="root";
+       $pass="";
+       $bd="accesspask";
+       $con=mysqli_connect($host,$user,$pass);
+       mysqli_select_db($con,$bd);
+       $consul="SELECT Nombre, Apellido FROM usuario where documento=$rol";
+       $solu=mysqli_query($con, $consul);
+       while ($cur=mysqli_fetch_array($solu)){
+       ?>
+    <div class="nom">Bienvenido lic. <?php echo $cur['Nombre'] ." ". $cur['Apellido'];?>. <img class="listmaes1" src="../img/maestro.jpg"></div>
+    <?php  }  ?>
 
     </header>
     <main>
     
-    <?php
-        $host="localhost";
-        $user="root";
-        $pass="";
-        $bd="accesspask";
-        $con=mysqli_connect($host,$user,$pass);
-        mysqli_select_db($con,$bd);
-
-        $consulta= "SELECT * FROM usuario where idRol=3";
-
-        $filas=mysqli_query($con, $consulta);
-
-        $produc=$filas; 
-        ?> 
-
+<br>
+<br>
         <div class="cuadro_texto2">
-            Seleccione un curso
+            Seleccione su curso
         </div>
         <?php
         $fifa=$_SESSION["usuario"];
@@ -64,38 +65,20 @@
          $consulta= "Select Curso from asignacion where $fifa=docu ";
          $filas=mysqli_query($con, $consulta);
         ?>
-        <form method="post" action="excest.php">
-        <select class="select" name="Cursos"  >
-        <?php
+         <?php
          while ($cursos=mysqli_fetch_array($filas))
          {
-           echo "<option>" . $cursos["Curso"] . "</option>";
-         }
+         ?>
+        <div class="container d-flex flex-wrap gap-3 p-4 li ">
+            <a class="card text-decoration-none"  href=".vistas/excest.php?id=<?php echo $cursos['Curso'];?>" style="width: 15rem;color:white;height:3rem"><?php echo "Grado  ".$cursos['Curso'];?></a>
+        </div>
+       <?php  } 
        ?>
-    </select>
-         <input type="image" src="../img/lupa.png" width="3%"  >
-        </form>
-    <!-- <table >
-        <thead>
-        <tr >
-            <th >Nombres y apellidos</th>
-            <th >opciones</th>
-        </tr>
-        </thead>
-        <tbody>
-        <?php foreach ($produc as $dato) {?>
 
-        <tr>   
-        <td> <?php echo  $dato['Nombre'] ." ". $dato['Apellido'] ; ?> </td>
-        <td><a href="../controlador/buscar.php?id=<?php echo $dato['documento']?>" class="btn">VER</a></td>
-    
-        <?php } ?> -->
-        </tbody>
-    </table>
-
-    </main>
-    
+       
+</div>
     <div class="loFeo">
+            
             
                 Access.Pask WEB &copy; 2022
             

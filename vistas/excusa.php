@@ -23,13 +23,10 @@
                     </div>
                
                     <?php   
-      $s12=$_GET['id4'];  ?>
+      $s12=$_GET['id4'];
+      $er=$_SESSION['usuario'];   ?>
                           <div class="text1">Documento Destinatario <input type="text" class="insert" name="dc" value="<?php echo $s12 ?>"></div>
-
-                    <div class="text1">Curso  <input type="text" class="insert" name="curso" placeholder="Ej: 601" required></div>
-                    <div class="text1">Documento <input type="text" class="insert" name="documento" placeholder="Ej: 111111111" required></div>
-                    <div class="text1">Nombre<input type="text" class="insert" name="nombre" placeholder="Ej: Juan" required></div>
-                    <div class="text1">Apellido <input type="text" class="insert" name="apellido" placeholder="Ej: Cortés" required></div>
+                    <div class="text1">Documento <input type="text" class="insert" name="documento" value=" <?php echo $er ?>"></div>
                     <div class="text1">Fecha<input class= "insert" id="fecha" type="date" name="fecha" required></div><br>
                     <div class="text1">Descripción</div><textarea name="descripcion" class="insert1" rows="10" cols="40" required></textarea> 
                     <input class="env" type="file" accept=".pdf,.jpg,.png,.doc" value ="submit" name="subirarchivo" multiple required>
