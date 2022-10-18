@@ -153,6 +153,28 @@ html {
     font-style: normal;
     font-weight: 900;
     font-size: 35px;
+    margin-left: 40%;
+}
+
+.listado2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    margin-left: 45%;
+}
+.Filtro{
+   
+    height: 30PX;
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 40%;
+    font-family: Courier, 'Lucida Console', monospace;
+    font-weight: 400;
+}
+.linea{
+    width: 600px;
+    margin-left: 35%;
 }
 
 .RegisCur {

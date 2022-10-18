@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="../stylos/ADM16.css">
+<link rel="stylesheet" type="text/css" href="../stylos/ADM17.css">
 
 <head>
     <meta charset="UTF-8">
@@ -51,17 +51,19 @@
   </div> <br>
         </div>
         <div id="cuadro_texto2">
-            <center>
-             
+        <hr class="linea">
+            <?php include("AsignarCu.php") ?>
+            <hr class="linea">
+           
             <div class="listado">
             Listado de Maestros
             </div>
                
-              <form method="POST" action="../vistas/busma.php"> <input type="text" name='Filtro' required> <input type="image" src="../img/lupa.png" width="3%">
+              <form method="POST" action="../vistas/busma.php"> <input type="text" class= "Filtro"name='Filtro' placeholder="Digite un documento"required> <input type="image" src="../img/lupa.png" width="3%" heigth="3%">
               <a class="boton" href="../vistas/activarPRF.php">Activar usuario</a>
               </form>
-
-              <?php include("AsignarCu.php") ?>
+           
+            
                 <table class="table">
                     <tr>
                         <td class= "text2">Nombre</td>
