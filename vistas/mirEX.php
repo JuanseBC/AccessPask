@@ -15,7 +15,6 @@
         </div>
     <table>
             <tr>
-			<th class= "text1">Nombres y Apellidos</th>
             <th class= "text1">Fecha</th>
             <th class="text1">Descripción</th>
             <th class= "text1">Archivo</th>
@@ -26,7 +25,6 @@
            
             ?>
             </tr>
-        <td> <?php echo  $dato['nombre'] ." ". $dato['apellido'] ; ?> </td>
         <td> <?php echo  $dato['fecha']   ; ?> </td>
         <td> <?php echo  $dato['descripcion']   ; ?> </td>
         
@@ -34,5 +32,6 @@
         <?php } ?>
 	</table>
     <a class="boton" href="../vistas/PRF.php">Regresar</a>
+    
     </body>
 </html>

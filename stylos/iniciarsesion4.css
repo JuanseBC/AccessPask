@@ -113,7 +113,24 @@ input {
     font-size: 15px;
     color: black;
 }
+.Lp{
+    background-color: #ffff;
+    color: black;
+    border: 1px solid #636668;
+    padding: 3px 2px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 12px;
+    width: 90px;
+    height: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Lp:hover {
+    background-color: #636668;
+    color: white;
 
+}
 
 /* @media screen (490PX ){
 
