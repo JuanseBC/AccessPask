@@ -11,7 +11,6 @@
     <title>Access Pask</title>
     <link rel="icon" type="img" href="../img/pask.png" size="any">
     <link rel="stylesheet" href="../stylos/PRF5.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../stylos/siuu.css">
 
   
@@ -33,30 +32,32 @@
         <li><a href="../modelo/cerrar_sesion.php" img src="../img/salir.png">Salir</a> </li>
         
     </ul>
-    <div class="nom">Bienvenido maestro<img class="listmaes1" src="../img/maestro.jpg"></div>
+    <?php
+     $rol=$_SESSION['usuario'];
+       $host="localhost";
+       $user="root";
+       $pass="";
+       $bd="accesspask";
+       $con=mysqli_connect($host,$user,$pass);
+       mysqli_select_db($con,$bd);
+       $consul="SELECT Nombre, Apellido FROM usuario where documento=$rol";
+       $solu=mysqli_query($con, $consul);
+       while ($cur=mysqli_fetch_array($solu)){
+       ?>
+    <div class="nom">Bienvenido lic. <?php echo $cur['Nombre'] ." ". $cur['Apellido'];?>. <img class="listmaes1" src="../img/maestro.jpg"></div>
+    <?php  }  ?>
 
     </header>
     <main>
     
-    <?php
-        $host="localhost";
-        $user="root";
-        $pass="";
-        $bd="accesspask";
-        $con=mysqli_connect($host,$user,$pass);
-        mysqli_select_db($con,$bd);
-
-        $consulta= "SELECT * FROM usuario where idRol=3";
-
-        $filas=mysqli_query($con, $consulta);
-
-        $produc=$filas; 
-        ?> 
-
+<br>
+<br>
         <div class="cuadro_texto2">
-            Seleccione un curso
+            Seleccione su curso
         </div>
+
         <?php
+    
         $fifa=$_SESSION["usuario"];
         $host="localhost";
         $user="root";
@@ -67,34 +68,26 @@
          $consulta= "Select Curso from asignacion where $fifa=docu ";
          $filas=mysqli_query($con, $consulta);
         ?>
-
-        <?php
+         <?php
          while ($cursos=mysqli_fetch_array($filas))
          {
-         require_once("../formatos/card.php");
          ?>
-         <table>
-           <div class="container d-flex flex-wrap gap-3 p-4 li ">
-<a class="card text-decoration-none"  href="../vistas/excest.php?id=<?php echo $cursos['Curso'];?>" style="width: 15rem;color:white;height:3rem"><?php echo "Grado  ".$cursos['Curso'];?></a>
-     
-     
-     
-     
-</div>
+        <div class="container d-flex flex-wrap gap-3 p-4 li ">
+            <a class="card text-decoration-none"  href=".vistas/excest.php?id=<?php echo $cursos['Curso'];?>" style="width: 15rem;color:white;height:3rem"><?php echo "Grado  ".$cursos['Curso'];?></a>
+        </div>
        <?php  } 
        ?>
 
        
 </div>
-</table
     <div class="loFeo">
+            
             
                 Access.Pask WEB &copy; 2022
             
         </div>
       
     <script src="../js/modal1.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
 </body>
 </html>

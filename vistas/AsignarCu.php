@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="../stylos/ADM16.css">
+<link rel="stylesheet" type="text/css" href="../stylos/ADM17.css">
 
 <head>
     <meta charset="UTF-8">
@@ -14,11 +14,11 @@
 <body>
 
                 <form method="post" action="../controlador/asig.php">
-        <center>
-        <h4><label for="rol" style="color: rgb(0, 0, 0); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-style: oblique; font-weight: 600; ">Asignar curso</label></h4>
-        <br>
-         <input type="number" class="text1" name="documento" id="rop" placeholder="Digite su documento" value="Digite su documento">
-
+        
+        <label for="rol" class="listado2">Asignar Curso</label>
+       
+         <input   class="Filtro"  placeholder="Digite su documento" name="documento";>
+       
                 <?php
         $host="localhost";
         $user="root";
@@ -29,7 +29,7 @@
          $consulta= "Select idCurso from cursos_ ";
          $filas=mysqli_query($con, $consulta);
         ?>
-        <select name="Cursos"  >
+        <select name="Cursos" >
         <option selected>Selecciona un curso</option>
         <?php
          while ($cursos=mysqli_fetch_array($filas))
@@ -43,11 +43,8 @@
             <button class="btn btn-warning" type="submit" name="btnIngresar">
                 Aceptar
             </button>
-
-        </div>
     </form>
-    </center>
-    </center>
+    
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
