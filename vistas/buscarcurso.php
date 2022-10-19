@@ -1,7 +1,7 @@
 <?php include("../formatos/cerrse.php");          ?>
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="../stylos/ADM16.css">
+<link rel="stylesheet" type="text/css" href="../stylos/ADM17.css">
 
 <head>
     <meta charset="UTF-8">
@@ -44,14 +44,14 @@
   </div> <br>
         </div>
     <div id="cuadro_texto2">
-        <center>
+       
         <div class="listado">
           Listado de Estudiantes
         </div>
-        <h2>Bienvenido:</h2>
-
-            <form method="POST" action="../vistas/busqueda.php"> <input type="text" name='Filtro'>  <input type="image" src="../img/lupa.png" width="3%" ></form>
-            <table  class="table table-striped">
+       <div class="listado2">Bienvenido </div>  <form method="POST" action="../vistas/busqueda.php"> <input type="text" class="Filtro"name='Filtro' placeholder="filtro">  <input type="image" src="../img/lupa.png" width="3%" ></form>
+          
+       
+       <table  class="table table-striped">
                 <tr >
                     <td class= "text2">Nombre</td>
                     <td class= "text2"> Apellido</td>
