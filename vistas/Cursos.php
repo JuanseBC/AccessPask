@@ -71,7 +71,7 @@
          <input type="image" src="../img/lupa.png" width="3%"  >
         </form>
         <br><br>
-        <a class="boton" href="activar.php">Activar usuario</a>
+        
         <form method="post" action="CRC.html">
           
             <button class="RegisCur" type="submit"  value="Registrar curso" >Registrar Curso</button> </td>

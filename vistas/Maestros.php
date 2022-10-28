@@ -59,7 +59,8 @@
             Listado de Maestros
             </div>
                
-              <form method="POST" action="../vistas/busma.php"> <input type="text" class= "Filtro"name='Filtro' placeholder="Digite un documento"required> <input type="image" src="../img/lupa.png" width="3%" heigth="3%">
+              <form method="POST" action="../vistas/busma.php"> 
+              <input type="text" class= "Filtro"name='Filtro' placeholder="Digite un documento"required> <input type="image" src="../img/lupa.png" width="3%" heigth="3%">
               <a class="boton" href="../vistas/activarPRF.php">Activar usuario</a>
               </form>
            
@@ -83,8 +84,8 @@
 
                           
 
-                            <td><a href="../modelo/editar.php?id=<?php echo $dato['documento']?>" class="btn btn-warning">Editar</a></td>
-                            <td><a href="../modelo/eliminar.php?id1=<?php echo $dato['documento']?>" class="btn btn-outline-danger">Inactivar</a></td><tr>
+                            <td><a href="../modelo/editar.php?id=<?php echo $dato['documento']?>" class="boton">Editar</a></td>
+                            <td><a href="../modelo/eliminar.php?id1=<?php echo $dato['documento']?>" class="boton2">Inactivar</a></td><tr>
                             <?php 
                            
                           
@@ -92,7 +93,7 @@
             }?>
                 </table></center></div>
                    <td><a href="../Reportes/ind4.php" class="btn btn-warning">Generar informe</a></td></tr>
-                   <script src="re2.js"></script>;
+                   <script src="re2.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 

@@ -171,11 +171,11 @@ html {
     margin-left: 40%;
     font-family: Courier, 'Lucida Console', monospace;
     font-weight: 400;
-    margin-left: 45%;
+    margin-left: 35%;
 }
 .linea{
     width: 600px;
-    margin-left: 35%;
+    margin-left: 30%;
 }
 
 .RegisCur {
@@ -216,4 +216,28 @@ html {
     border-radius: 50px;
     /*bordes redondos*/
     display: inline-block;
+}
+.boton2 {
+    border: 1px solid rgb(223, 22, 22);
+    /*anchura, estilo y color borde*/
+    padding: 10px;
+    /*espacio alrededor texto*/
+    background-color: #ffd00000;
+    /*color botón*/
+    color: rgb(223, 22, 22);
+    /*color texto*/
+    text-decoration: none;
+    /*decoración texto*/
+    text-transform: uppercase;
+    /*capitalización texto*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-size: 15px;
+    /*tipografía texto*/
+    border-radius: 50px;
+    /*bordes redondos*/
+    display: inline-block;
+}
+.boton2:hover{
+    background-color: rgb(223, 22, 22);
 }

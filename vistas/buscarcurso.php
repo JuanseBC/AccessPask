@@ -49,7 +49,7 @@
           Listado de Estudiantes
         </div>
        <div class="listado2">Bienvenido </div>  <form method="POST" action="../vistas/busqueda.php"> <input type="text" class="Filtro"name='Filtro' placeholder="filtro">  <input type="image" src="../img/lupa.png" width="3%" ></form>
-          
+       <a class="boton" href="activar.php">Activar Usuario</a>
        
        <table  class="table table-striped">
                 <tr >
