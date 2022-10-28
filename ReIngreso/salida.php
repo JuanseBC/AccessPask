@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AccessPak</title>
 
-    <link rel="stylesheet" type="text/css" href="../estilos.css">
+    <link rel="stylesheet" type="text/css" href="../stylos/estilos.css">
     <link rel="stylesheet" type="text/css" href="../stylos/iniciarsesion5.css">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
@@ -25,7 +25,7 @@
 
         <div class="options__menu">	
 
-            <a href="../ejemplo.html" class="selected">
+            <a href="../IniciarSesion.html" class="selected">
                 <div class="option">
                     <i class="fas fa-home" title="Inicio"></i>
                     <h4>Inicio</h4>
@@ -64,10 +64,10 @@ date_default_timezone_set('America/bogota');
  <form method="POST" action="../controlador/sal.php" accept-charset="UTF-8" class="form2"> 
  <div class="titulo">
                 <h1>REGISTRO DE SALIDA</h1>
-    </div><br><br>
- <label for="doc2" class="text">fecha: <input type="text" class="doc2"  name="fech" value="<?php echo  date("Y-m-d ") ?>"readonly></input></label><br>
- <label for="doc2" class="text">hora de salida: <input type="text" class="doc2" name="hoSa" value="<?php echo date("g:i A")?>"readonly></input></label><br>
- <label for="doc2" class="text">documento: <input type="text"class="doc2" name="documen" value=""require></imput></label><br>
+    </div><br>
+ <label for="doc2" class="text">Fecha <input type="text" class="doc2"  name="fech" value="<?php echo  date("Y-m-d ") ?>"readonly></input></label><br>
+ <label for="doc2" class="text">Hora de Salida: <input type="text" class="doc2" name="hoSa" value="<?php echo date("g:i A")?>"readonly></input></label><br>
+ <label for="doc2" class="text">Documento <input type="text"class="doc2" name="documen" value=""require></imput></label><br>
  <input type="submit"  class="LogIn2" name="enviar"  value="registrar salida"></imput>
 
       </main>

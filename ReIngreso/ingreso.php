@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AccessPask</title>
-
+    <link rel="icon" type="img" href="../AccessPask/img/pask.png" size="any">
     <link rel="stylesheet" type="text/css" href="../stylos/estilos.css">
     <link rel="stylesheet" type="text/css" href="../stylos/iniciarsesion5.css">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
@@ -64,10 +64,10 @@ date_default_timezone_set('America/bogota');
  <form method="POST" action="../controlador/ing.php" accept-charset="UTF-8"  class="form2">
  <div class="titulo">
                 <h1>REGISTRO DE INGRESO</h1>
-  </div><br><br>
- <label for="doc2" class="text" >fecha: <input type="text" class="doc2" id="doc2" name="fe" value="<?php echo  date("Y-m-d ") ?>"readonly></input></label><br>
- <label for="doc2" class="text" >hora de ingreso: <input type="text" class="doc2" id="doc2" name="hoIn" value="<?php echo date("g:i A")?>"readonly></input></label><br>
- <label for="doc2" class="text">documento: <input type="text"class="doc2" id="doc2" name="docu" value="" required></imput></label><br>
+  </div><br>
+ <label for="doc2" class="text" >Fecha <input type="text" class="doc2" id="doc2" name="fe" value="<?php echo  date("Y-m-d ") ?>"readonly></input></label><br>
+ <label for="doc2" class="text" >Hora de Ingreso: <input type="text" class="doc2" id="doc2" name="hoIn" value="<?php echo date("g:i A")?>"readonly></input></label><br>
+ <label for="doc2" class="text">Documento <input type="text"class="doc2" id="doc2" name="docu" value="" required></imput></label><br>
  <input  type="submit"  class="LogIn2" name="enviar" value="registrar ingreso"></imput>
  
       </main>
