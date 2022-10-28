@@ -25,11 +25,13 @@
 
 <ul>
 
-    <li><a href="../vistas/PRF.php">Cursos</a></li>
-    <li><a href="../modelo/cerrar_sesion.php" img src="../img/salir.png">Salir</a> </li>
-    
-</ul>
+    <li><a href="../vistas/PRF.php">Inicio</a></li>
+    <li><a  class="btn btn-warning " class="menu"  style="width: 200px;border-radius: 15px;padding-bottom: 30px;" data-bs-toggle="modal"  data-bs-target="#static22">Generar informe</a></li>
+    </ul>
 </header>
+
+
+
 <main>
    
         <div class="nom">
@@ -71,8 +73,9 @@
             <?php }?>
             </tbody>
      </table>    
-     <td><a  class="btn btn-warning" style="border-radius: 15px;width: 200px;padding-bottom: 30px;" data-bs-toggle="modal" data-bs-target="#static22">Generar informe</a></td></tr>
-                    <div class="modal fade" id="static22" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+     
+     <!-- E s modal de generar informe -->
+       <div class="modal fade" id="static22" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog">
        <div class="modal-content " style="background-color:black; border-radius:15px;">
         <button type="button" style="background-color:white; position:right;"  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -81,7 +84,7 @@
         <h5  id="staticBackdropLabel" style="color: white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:white" >Informes</h5>
       </div>
     </center>
-      <div  style="background-color: #ffd000;  border-radius:15px;">
+      <div  style="background-color: #ffd000;   border-radius:15px;">
        <?php include("../Reportes/rep2.php"); ?>
        <br><br>
     </div>

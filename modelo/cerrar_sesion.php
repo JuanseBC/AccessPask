@@ -13,7 +13,7 @@ session_destroy();
 
 
 
-header ('Location: ../vistas/inicio2.html');
+header ('Location: ../ejemplo.html');
 
 exit;
 

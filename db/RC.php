@@ -7,5 +7,7 @@ mysqli_close($con);
 
 if($resultado){
     header("location:../vistas/Cursos.php");
+}else{
+    echo"<script>alert.warning("te falta odio")<script>"
 }
 ?>

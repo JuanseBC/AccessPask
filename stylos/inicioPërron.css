@@ -1,0 +1,135 @@
+.cuadroPERRON {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cuadro_texto {
+    margin: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: .5rem;
+}
+
+.menu ul li a {
+    color: rgba(0, 0, 0, 0.767);
+    display: block;
+    padding: .5rem;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+}
+
+.menu ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.472);
+}
+
+.menu ul li p {
+    color: white;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: 1000;
+    font: size 60px;
+}
+
+.iconos {
+    display: flex;
+    align-items: center;
+}
+
+.cuadro_texto2 {
+
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cuadro_texto2 p {
+    font-family: Cambria;
+    font-style: normal;
+    font-weight: 1000;
+    font: size 60px;
+}
+
+#reg ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#reg ul li {
+    display: inline-block;
+}
+
+#reg ul li a {
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 20px 60px;
+    text-decoration: none;
+}
+
+#reg ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.472);
+}
+
+
+
+
+body,
+html {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-size: 16px;
+    font-family: 'RobotoCondensed';
+    overflow: hidden;
+}
+
+.boton {
+    border: 1px solid #ffd000;
+    padding: 10px;
+    background-color: #8d876d;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-size: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 45%;
+    margin-top: 10%;
+}
+
+.boton1 {
+    border: 1px solid #ffd000;
+    padding: 10px;
+    background-color: #8d876d;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-size: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 45%;
+    margin-top: 5%;
+}

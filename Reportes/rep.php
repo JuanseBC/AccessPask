@@ -12,33 +12,15 @@
     <center>
  <form action="../controlador/report.php" method="post" >
         <h1>Modulo de reportes</h1>
-        <h2><label for="start">Fecha desde</label> <input type="text" id="start" name="fec1"
-            value="dd-mm-aaaa"
-            min="2022-01-01" max="2050-12-31">
-            <label for="start">Fecha hasta</label> <input type="text" id="start" name="fec2"
-            value="dd-mm-aaaa"
-            min="2022-01-01" max="2050-12-31">
+
+        <h2>        <label>Documento</label> <input type="number"  name="docu" >
+<label for="start">Fecha desde</label> <input class= "insert" id="fecha" type="date" name="fec1" required>
+    
+            <label for="start">Fecha hasta</label> <input class= "insert" id="fecha" type="date" name="fec2" required>
             <label for="fec">Hora desde</label> <input type="text" id="hora" name="hora1" value="HH:MM:SS" >
             <label for="fec">Hora hasta</label> <input type="text" id="hora" name="hora2" value="HH:MM:SS" >
-            <?php
-        $host="localhost";
-        $user="root";
-        $pass="";
-        $bd="accesspask";
-        $con=mysqli_connect($host,$user,$pass);
-        mysqli_select_db($con,$bd);
-         $consulta= "Select idCurso from cursos_ ";
-         $filas=mysqli_query($con, $consulta);
-        ?>
-        <select name="Cursos"  >
-        <option selected>Seleccione un curso</option>
-        <?php
-         while ($cursos=mysqli_fetch_array($filas))
-         {
-           echo "<option>" . $cursos["idCurso"] . "</option>";
-         }
-       ?>
-    </select>
+           
+    
 
 
 

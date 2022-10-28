@@ -5,7 +5,7 @@ session_start();
 
 if ($_SESSION["usuario"]==null) {
 
-header("location:inicio2.html");
+header("location:../ejemplo.html");
 exit;
 }
 

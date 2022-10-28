@@ -8,7 +8,7 @@
       $hora1=$_POST['hora1'];
       $hora2=$_POST['hora2'];
 
-      $sele=$_POST['Cursos'];
+      $sele=$_POST['docu'];
 
 
              

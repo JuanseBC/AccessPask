@@ -2,7 +2,7 @@
 $conn = mysqli_connect("localhost","root","") or  
 die(mysql_error()); 
  mysqli_select_db($conn,"accesspask"); 
-             $consu= "SELECT usuario.documento,Nombre,Apellido,idCurso,tiempo.fecha,hin,hsa FROM tiempo,usuario where usuario.idCurso='$sele' and tiempo.Fecha > '$fecha1' and tiempo.Fecha < '$fecha2' AND  tiempo.hin > '$hora1' and tiempo.hin < '$hora2'  and  tiempo.documento=usuario.documento " ;
+             $consu= "SELECT usuario.documento,Nombre,Apellido,idCurso,tiempo.fecha,hin,hsa FROM tiempo,usuario where tiempo.Fecha > '$fecha1' and tiempo.Fecha < '$fecha2' AND  tiempo.hin > '$hora1' and tiempo.hin < '$hora2'  and  '$sele'=usuario.documento " ;
     
              $fi=mysqli_query($con, $consu);
 
