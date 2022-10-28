@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 include '../v/ingreso.php';
 $conexion=mysqli_connect('localhost','root','','accesspask');
 

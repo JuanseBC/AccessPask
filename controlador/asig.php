@@ -6,7 +6,7 @@
       $sele=$_POST['Cursos'];
       $SD=$_POST['documento'];
    
-   $lqs="SELECT docu,Curso FROM asignacion ";
+   $lqs="SELECT docu,Curso FROM asignacion, usuario where idRol=2 ";
    $result=mysqli_query ($con,$lqs) ;
   
 
@@ -14,7 +14,7 @@ foreach($result as $keuy){
  $l=  $keuy["docu"];
  $v=  $keuy["Curso"];
 }
-if($SD<>$l or $sele<>$v){
+if($SD<>$l or $sele<>$v ){
     $sol="INSERT INTO asignacion(docu,Curso)
     VALUES('$SD','$sele')";
     $resultado=mysqli_query($con,$sol);

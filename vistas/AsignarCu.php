@@ -17,7 +17,7 @@
         
         <label for="rol" class="listado2">Asignar Curso</label>
        
-         <input   class="Filtro"  placeholder="Digite el documento" name="documento";>
+         <input   class="Filtro"  placeholder="Digite el documento" name="documento" required>
        
                 <?php
         $host="localhost";
@@ -29,8 +29,8 @@
          $consulta= "Select idCurso from cursos_ ";
          $filas=mysqli_query($con, $consulta);
         ?>
-        <select name="Cursos" >
-        <option selected>Selecciona un curso</option>
+        <select name="Cursos" required class="select rol">
+        <option selected disabled value="">Selecciona un curso</option>
         <?php
          while ($cursos=mysqli_fetch_array($filas))
          {
