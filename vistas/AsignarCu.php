@@ -17,7 +17,7 @@
         
         <label for="rol" class="listado2">Asignar Curso</label>
        
-         <input   class="Filtro"  placeholder="Digite su documento" name="documento";>
+         <input   class="Filtro"  placeholder="Digite el documento" name="documento";>
        
                 <?php
         $host="localhost";
@@ -40,7 +40,7 @@
     </select>
 
 
-            <button class="btn btn-warning" type="submit" name="btnIngresar">
+            <button class="boton" type="submit" name="btnIngresar">
                 Aceptar
             </button>
     </form>

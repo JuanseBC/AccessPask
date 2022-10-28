@@ -5,5 +5,5 @@
     $datos=$usuario->get_usuario();
 
     //Llamada a la vista
-    require_once("vistas/inicio.html");
+    require_once("vistas/IniciarSesion.html");
 ?> 

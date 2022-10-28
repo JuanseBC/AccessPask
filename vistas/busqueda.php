@@ -1,7 +1,7 @@
 <?php include("../formatos/cerrse.php");          ?>
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="../stylos/ADM16.css">
+<link rel="stylesheet" type="text/css" href="../stylos/ADM17.css">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
