@@ -16,10 +16,10 @@ foreach ($ejecut as $key) {
 $ejecutar = mysqli_query ($conexion,$consulta);
     }}
         if($ejecutar){
-            echo"<script>alert('su registro fue exitoso come back bro');window.location='../Reingreso/ingreso.php'</script>";
+            echo"<script>alert('El registro se realizo de manera correcta');window.location='../Reingreso/ingreso.php'</script>";
         
         } else {
-            echo"<script>alert('vales monda no servis ni para escribir un numero');window.location='../Reingreso/ingreso.php'</script>";
+            echo"<script>alert('El registro no se pudo realizar de manera correcta');window.location='../Reingreso/ingreso.php'</script>";
 
         }
          
