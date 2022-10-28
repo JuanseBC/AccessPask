@@ -67,7 +67,7 @@ date_default_timezone_set('America/bogota');
                 <h1>REGISTRO DE SALIDA</h1>
     </div><br>
  <label for="doc2" class="text">Fecha <input type="text" class="doc2"  name="fech" value="<?php echo  date("Y-m-d ") ?>"readonly></input></label><br>
- <label for="doc2" class="text">Hora de Salida: <input type="text" class="doc2" name="hoSa" value="<?php echo date("g:i A")?>"readonly></input></label><br>
+ <label for="doc2" class="text">Hora de Salida <input type="text" class="doc2" name="hoSa" value="<?php echo date("g:i A")?>"readonly></input></label><br>
  <label for="doc2" class="text">Documento <input type="text"class="doc2" name="documen" value=""required></imput></label><br>
  <input type="submit"  class="LogIn2" name="enviar"  value="Registrar Datos"></imput>
 
