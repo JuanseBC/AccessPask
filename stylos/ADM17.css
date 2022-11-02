@@ -166,11 +166,9 @@ html {
 
 select,
 input {
-    margin: 20px;
+    
     height: 27PX;
     border-radius: 10px;
-    display: block;
-    margin-left: 35%;
     font-family: Courier, 'Lucida Console', monospace;
     font-weight: 400;
 }
