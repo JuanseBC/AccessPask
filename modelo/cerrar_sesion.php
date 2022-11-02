@@ -13,7 +13,7 @@ session_destroy();
 
 
 
-header ('Location: ../ejemplo.html');
+header ('Location: ../IniciarSesion.html');
 
 exit;
 
