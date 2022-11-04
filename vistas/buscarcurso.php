@@ -1,7 +1,7 @@
 <?php include("../formatos/cerrse.php");          ?>
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="../stylos/ADM17.css">
+<link rel="stylesheet" type="text/css" href="../stylos/ADM18.css">
 
 <head>
     <meta charset="UTF-8">
@@ -48,10 +48,10 @@
         <div class="listado">
           Listado de Estudiantes
         </div>
-       <div class="listado2">Bienvenido </div>  <form method="POST" action="../vistas/busqueda.php"> <input type="text" class="Filtro"name='Filtro' placeholder="filtro">  <input type="image" src="../img/lupa.png" width="3%" ></form>
+        <form method="POST" action="../vistas/busqueda.php"> <input type="text" class="Filtro"name='Filtro' placeholder="Digite un documento">  <input type="image" src="../img/lupa.png" width="3%" ></form>
        <a class="boton" href="activar.php">Activar Usuario</a>
        
-       <table  class="table table-striped">
+       <table  class="table">
                 <tr >
                     <td class= "text2">Nombre</td>
                     <td class= "text2"> Apellido</td>

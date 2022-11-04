@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="../stylos/ADM17.css">
+<link rel="stylesheet" type="text/css" href="../stylos/ADM18.css">
 
 <head>
     <meta charset="UTF-8">
@@ -63,8 +63,6 @@
               <input type="text" class= "Filtro"name='Filtro' placeholder="Digite un documento"required> <input type="image" src="../img/lupa.png" width="3%" heigth="3%">
               <a class="boton" href="../vistas/activarPRF.php">Activar usuario</a>
               </form>
-           
-            
                 <table class="table">
                     <tr>
                         <td class= "text2">Nombre</td>

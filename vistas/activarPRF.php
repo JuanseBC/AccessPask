@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="es">
-<link rel="stylesheet" type="text/css" href="../stylos/activar1.css">
+<link rel="stylesheet" type="text/css" href="../stylos/activar2.css">
 
 
 
@@ -16,7 +16,8 @@
 
 <main>
     <div class="nom">
-          Listado Usuarios Inactivos
+          Maestros inactivos
+          
         </div>
 <table>
 
@@ -39,7 +40,7 @@
      <td><a href="../modelo/activarUsu.php?id1=<?php echo $dato['documento']?>" class="boton">Activar</a></td>
      <?php }?>
      </table>    
-       
+     <a href="../controlador/ConMaes.php" class="boton">Regresar</a>
    </main>
 </body>
 </html>
