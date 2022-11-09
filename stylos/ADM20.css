@@ -163,7 +163,6 @@ header {
 
 select,
 input {
-    margin: 20px;
     height: 27PX;
     border-radius: 10px;
     display: inline-block;
