@@ -28,12 +28,14 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #ffd000;
 }
+
 .cuadro_texto {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 35px;
 }
+
 .nom {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: normal;
@@ -41,9 +43,9 @@
     font-size: 35px;
     margin-left: 32%;
     margin-top: 5%;
-    background-color:#ffd000;
     width: 40%;
 }
+
 main {
     text-align: center;
     margin: 20px;
@@ -56,7 +58,7 @@ main h2 {
 main table {
     width: 70%;
     margin: 20px;
-    margin-left:15%;
+    margin-left: 15%;
     margin-top: 5%;
 }
 
@@ -65,19 +67,20 @@ th {
     height: 30px;
     border-bottom: 1px solid;
     border-color: #ffd000;
-   
 }
-.listmaes{
+
+.listmaes {
     width: 60px;
     height: 50px;
     text-align: right;
- 
- }
- .text2{
+}
+
+.text2 {
     font-weight: 600;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
 }
+
 .boton {
     border: 1px solid #ffd000;
     padding: 10px;

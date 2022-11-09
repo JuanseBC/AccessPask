@@ -1,7 +1,7 @@
 <?php include("../formatos/cerrse.php");          ?>
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="../stylos/ADM16.css">
+<link rel="stylesheet" type="text/css" href="../stylos/ADM18.css">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,12 +53,19 @@
   </div> <br>
         </div>
     <div id="cuadro_texto2">
-        <center>
-        <div class="listado">
+        
+        <hr class="linea">
+            <?php include("AsignarCu.php") ?>
+            <hr class="linea"> 
+            
+            <div class="listado">
             Listado de Maestros
             </div>
-            <form method="POST" action="busma.php"> <input type="text" name="Filtro" required>  <input type="image" src="../img/lupa.png" width="3%"  ></form>
-            <table  class="table table-striped">
+            <form method="POST" action="busma.php"> 
+            <input type="text" class= "Filtro"name='Filtro' placeholder="Digite un documento"required> <input type="image" src="../img/lupa.png" width="3%" heigth="3%">
+              <a class="boton" href="../vistas/activarPRF.php">Activar usuario</a>
+            </form>
+            <table  class="table ">
                 <tr >
                     <td class= "text2">Nombre</td>
                     <td class= "text2">Apellido</td>
@@ -68,6 +75,7 @@
                 </tr>
     
                 <?php
+                error_reporting(0);
                 $buscar= $_POST["Filtro"];           
                 $host="localhost";
                 $user="root";
@@ -76,7 +84,7 @@
                 $con=mysqli_connect($host,$user,$pass);
         
                 mysqli_select_db($con,$bd);
-         $consulta= "Select * from usuario where idrol=2 and documento<>$buscar";
+         $consulta= "Select * from usuario where idrol=2 and documento=$buscar";
          $filas=mysqli_query($con, $consulta);
         
          while ($dato=mysqli_fetch_array($filas))

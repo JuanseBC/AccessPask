@@ -37,8 +37,8 @@ html {
     overflow: hidden;
 }
 
-.cuadro_texto {
-    width: 20%;
+header {
+    display: flex;
 }
 
 .img_principal {
@@ -50,19 +50,16 @@ html {
 }
 
 .iconos {
-    position: absolute;
-    height: auto;
-    left: 2%;
-    right: 0%;
-    top: 5%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cuadro_texto {
+    width: 20%;
 }
 
 .cuadro_texto2 {
-    position: absolute;
-    height: 100px;
-    left: 0%;
-    right: 0%;
-    top: 20%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: normal;
     font-weight: 600;
@@ -169,8 +166,8 @@ input {
     margin: 20px;
     height: 27PX;
     border-radius: 10px;
-    display: block;
-    margin-left: 35%;
+    display: inline-block;
+    margin-left: 5%;
     font-family: Courier, 'Lucida Console', monospace;
     font-weight: 400;
 }
@@ -254,4 +251,20 @@ input {
 
 .boton2:hover {
     background-color: rgb(223, 22, 22);
+}
+
+.card {
+    background-image: url("https://gstatic.com/classroom/themes/Honors.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-right: 80px;
+    padding-top: 10px;
+    display: flex;
+}
+
+.contenedor_Principal {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }

@@ -35,6 +35,6 @@ if ($nr==1){
   
 }
 else {
-    echo "<script>alert('Rol, nombre o clave incorrecto.'); window.location= '../vistas/IniciarSesion.html';</script>";
+    echo "<script>alert('Rol, nombre o clave incorrecto.'); window.location= '../IniciarSesion.html';</script>";
 }
 ?>

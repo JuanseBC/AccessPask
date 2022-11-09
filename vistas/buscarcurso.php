@@ -1,7 +1,7 @@
 <?php include("../formatos/cerrse.php");          ?>
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="../stylos/ADM17.css">
+<link rel="stylesheet" type="text/css" href="../stylos/ADM20.css">
 
 <head>
     <meta charset="UTF-8">
@@ -13,45 +13,48 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-<img class="img_principal" src="../img/pask.png"  >
- <div class="cuadro_texto">
-  <div class="iconos">
-    <div class="menu">
-            <center>
-            <ul>
-          <li><a href="../vistas/Cursos.php">Cursos</a></li>
-          <li><a href="../controlador/ConMaes.php">Maestros</a></li>
-          <li><a  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Registro</a></li>
-          <li><a href="../modelo/cerrar_sesion.php" img src="../img/salir.png">Salir</a> </li>
-      
-              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
-       <div class="modal-content " style="background-color:black; border-radius:15px;">
-        <button type="button" style="background-color:white; position:right;"  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-         <center>
-         <div  style="background-color: black; height:45px ">
-        <h5  id="staticBackdropLabel" style="color: white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:white" >Registrar Usuario</h5>
-      </div>
-    </center>
-      <div  style="background-color: #ffd000;  border-radius:15px;">
-       <?php include("r.html"); ?>
-    </div>
-  </div>
-</div>
+<header>
+    <img class="img_principal" src="../img/pask.png"  >
+    <div class="iconos">
+      <div class="menu">
+        <ul>
+        <li><a href="../vistas/Cursos.php">Cursos</a></li>
+
+        <li><a href="../controlador/ConMaes.php">Maestros</a></li>
+
+        <li><a  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Registro</a></li>
+  
+        <li><a href="../modelo/cerrar_sesion.php">Salir</a> </li>
+
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <center>
+              <div class="modal-content " style="background-color:black; border-radius:15px;">
+                <button type="button" style="background-color:white; position:right;"  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div  style="height:45px ">
+                  <h5  id="staticBackdropLabel" style="color: white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:white" >Registrar Usuario</h5>
+                </div>
+                <div  style="background-color: #ffd000;  border-radius:15px;">
+                <?php include("r.html"); ?>
+                <center>
+                </div>
+              </div> 
+            </div>
+          </div>
         </ul>
-      </center>
+      </div>
     </div>
-  </div> <br>
-        </div>
+  </header>
+
     <div id="cuadro_texto2">
        
         <div class="listado">
           Listado de Estudiantes
         </div>
-       <div class="listado2">Bienvenido </div>  <form method="POST" action="../vistas/busqueda.php"> <input type="text" class="Filtro"name='Filtro' placeholder="filtro">  <input type="image" src="../img/lupa.png" width="3%" ></form>
+        <form method="POST" action="../vistas/busqueda.php"> <input type="text" class="Filtro"name='Filtro' placeholder="Digite un documento">  <input type="image" src="../img/lupa.png" width="3%" ></form>
        <a class="boton" href="activar.php">Activar Usuario</a>
        
-       <table  class="table table-striped">
+       <table  class="table">
                 <tr >
                     <td class= "text2">Nombre</td>
                     <td class= "text2"> Apellido</td>
@@ -61,7 +64,7 @@
                 </tr>
                 <?php
 
-                $curso= $_POST["Cursos"];           
+                $curso= $_GET["id"];           
                 $host="localhost";
                 $user="root";
                 $pass="";

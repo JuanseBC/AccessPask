@@ -41,7 +41,7 @@
      <td><a href="../modelo/activarUsu.php?id1=<?php echo $dato['documento']?>" class="btn btn-warning">Activar</a></td>
      <?php }?>
      </table>    
-     
+     <a href="../vistas/Cursos.php" class="boton">Regresar</a>
    </main>
 </body>
 </html>

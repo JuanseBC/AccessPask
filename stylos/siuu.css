@@ -1,14 +1,13 @@
-.card{
+.card {
     background-image: url("https://gstatic.com/classroom/themes/Honors.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding-right: 80px;
     padding-top: 10px;
-    display :flex;
+    display: flex;
 }
 
-
-.contenedor_Principal{
+.contenedor_Principal {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

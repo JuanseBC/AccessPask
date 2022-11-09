@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="../stylos/ADM17.css">
+<link rel="stylesheet" type="text/css" href="../stylos/ADM20.css">
 
 <head>
     <meta charset="UTF-8">
@@ -14,42 +14,39 @@
 </head>
 
 <body>
-<img class="img_principal" src="../img/pask.png"  >
- <div class="cuadro_texto">
-  <div class="iconos">
-    <div class="menu">
-      
-      <center>
-      
+<header>
+    <img class="img_principal" src="../img/pask.png"  >
+    <div class="iconos">
+      <div class="menu">
         <ul>
-          <li><a href="../vistas/Cursos.php">
-              Cursos</a></li>
-          <li><a href="../controlador/ConMaes.php">
-              Maestros</a></li>
-            <li><a  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Registro</a></li>
-             <li><a href="../modelo/cerrar_sesion.php" img src="../img/salir.png">
-              Salir</a> </li>
-              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
-       <div class="modal-content " style="background-color:black; border-radius:15px;">
-        <button type="button" style="background-color:white; position:right;"  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-         <center>
-         <div  style="background-color: black; height:45px ">
-        <h5  id="staticBackdropLabel" style="color: white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:white" >Registrar Usuario</h5>
-      </div>
-    </center>
-      <div  style="background-color: #ffd000;  border-radius:15px;">
-       <?php include("r.html"); ?>
-    </div>
-  </div>
-</div>
+        <li><a href="../vistas/Cursos.php">Cursos</a></li>
+
+        <li><a href="../controlador/ConMaes.php">Maestros</a></li>
+
+        <li><a  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Registro</a></li>
   
+        <li><a href="../modelo/cerrar_sesion.php">Salir</a> </li>
+
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <center>
+              <div class="modal-content " style="background-color:black; border-radius:15px;">
+                <button type="button" style="background-color:white; position:right;"  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div  style="height:45px ">
+                  <h5  id="staticBackdropLabel" style="color: white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:white" >Registrar Usuario</h5>
+                </div>
+                <div  style="background-color: #ffd000;  border-radius:15px;">
+                <?php include("r.html"); ?>
+                <center>
+                </div>
+              </div> 
+            </div>
+          </div>
         </ul>
-      </center>
+      </div>
     </div>
-  </div> <br>
-        </div>
+  </header>
+  <main>
         <div id="cuadro_texto2">
         <hr class="linea">
             <?php include("AsignarCu.php") ?>
@@ -63,8 +60,6 @@
               <input type="text" class= "Filtro"name='Filtro' placeholder="Digite un documento"required> <input type="image" src="../img/lupa.png" width="3%" heigth="3%">
               <a class="boton" href="../vistas/activarPRF.php">Activar usuario</a>
               </form>
-           
-            
                 <table class="table">
                     <tr>
                         <td class= "text2">Nombre</td>
@@ -93,6 +88,7 @@
             }?>
                 </table></center></div>
                    <td><a href="../Reportes/ind4.php" class="btn btn-warning">Generar informe</a></td></tr>
+                   </main>
                    <script src="re2.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
