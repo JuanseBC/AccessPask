@@ -1,7 +1,7 @@
 <?php include("../formatos/cerrse.php");          ?>
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="../stylos/ADM18.css">
+<link rel="stylesheet" type="text/css" href="../stylos/ADM20.css">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,45 +14,38 @@
 
 </head>
 <body>
-    
-    
-<img class="img_principal" src="../img/pask.png"  >
- <div class="cuadro_texto">
-  <div class="iconos">
-    <div class="menu">
-            <center>
-            <ul>
-          <li><a href="../vistas/Cursos.php">
-              Cursos</a></li>
-          <li><a href="../controlador/ConMaes.php">
-              Maestros</a></li>
-            <li><a  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Registro</a></li>
-             <li><a href="../modelo/cerrar_sesion.php" img src="../img/salir.png">
-              Salir</a> </li>
+<header>
+    <img class="img_principal" src="../img/pask.png"  >
+    <div class="iconos">
+      <div class="menu">
+        <ul>
+        <li><a href="../vistas/Cursos.php">Cursos</a></li>
 
-               
-              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
-       <div class="modal-content " style="background-color:black; border-radius:15px;">
-        <button type="button" style="background-color:white; position:right;"  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-         <center>
-         <div  style="background-color: black; height:45px ">
-        <h5  id="staticBackdropLabel" style="color: white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:white" >Registrar Usuario</h5>
-      </div>
-    </center>
-      <div  style="background-color: #ffd000;  border-radius:15px;">
-       <?php include("r.html"); ?>
-    </div>
-  </div>
-</div>
+        <li><a href="../controlador/ConMaes.php">Maestros</a></li>
+
+        <li><a  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Registro</a></li>
   
-        </ul>
-      </center>
-    </div>
-  </div> <br>
-        </div>
+        <li><a href="../modelo/cerrar_sesion.php">Salir</a> </li>
 
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <center>
+              <div class="modal-content " style="background-color:black; border-radius:15px;">
+                <button type="button" style="background-color:white; position:right;"  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div  style="height:45px ">
+                  <h5  id="staticBackdropLabel" style="color: white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:white" >Registrar Usuario</h5>
+                </div>
+                <div  style="background-color: #ffd000;  border-radius:15px;">
+                <?php include("r.html"); ?>
+                <center>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </header>
     <div id="cuadro_texto2">
         
         <div class="listado">
