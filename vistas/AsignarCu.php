@@ -17,8 +17,8 @@
         
         <label for="rol" class="listado2">Asignar Curso</label>
        
-         <input   class="Filtro"  placeholder="Digite el documento" name="documento" required>
-       
+<!--          <input   class="Filtro"  placeholder="Digite el documento" name="documento" required>
+ -->       
                 <?php
         $host="localhost";
         $user="root";
@@ -28,7 +28,22 @@
         mysqli_select_db($con,$bd);
          $consulta= "Select idCurso from cursos_ ";
          $filas=mysqli_query($con, $consulta);
+         $consul="Select documento,Nombre,Apellido from usuario where idRol=2 ";
+         $fil= mysqli_query($con,$consul);
+
         ?>
+         <select name="Profesores" required class="select rol">
+        <option selected disabled value="">Selecciona el maestro</option>
+        <?php
+         while ($profes=mysqli_fetch_array($fil))
+         {
+           echo "<option>" . $profes["Nombre"] ." ". $profes["Apellido"] ."</option>";
+         }
+       ?>
+      
+    </select>
+    <!-- <input type="hidden" class="form-control"  name="documen" value="<?php echo $docpro;?>"> -->
+
         <select name="Cursos" required class="select rol">
         <option selected disabled value="">Selecciona un curso</option>
         <?php

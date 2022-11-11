@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AccessPask</title>
     <link rel="icon" type="img" href="../AccessPask/img/pask.png" size="any">
-    <link rel="stylesheet" type="text/css" href="../AccessPask/stylos/estilos.css">
+    <link rel="stylesheet" type="text/css" href="stylos/estilos1.css">
     <link rel="stylesheet" type="text/css" href="stylos/iniciarsesion6.css">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
+
 <body id="body">
     <header>
         <div class="icon__menu">
@@ -19,11 +21,11 @@
 
     <div class="menu__side" id="menu_side">
 
-        <div >
-            <IMG class="img_principal" type="icon" SRC="img/pask.png"  style="width: 60px;  margin: 3px;" >
+        <div>
+            <IMG class="img_principal" type="icon" SRC="img/pask.png" style="width: 60px;  margin: 3px;">
         </div>
 
-        <div class="options__menu">	
+        <div class="options__menu">
 
             <a href="Iniciarsesion.html" class="selected">
                 <div class="option">
@@ -38,7 +40,7 @@
                     <h4>Registrar ingreso</h4>
                 </div>
             </a>
-            
+
             <a href="ReIngreso/salida.php">
                 <div class="option">
                     <i class="far fa-file-alt" title="Cursos"></i>
@@ -46,7 +48,7 @@
                 </div>
             </a>
 
-         
+
 
         </div>
 
@@ -56,11 +58,11 @@
         <form action="modelo/validar.php" method="post" autocomplete="off." class="full-box logInForm">
 
             <IMG class="img_principal" SRC="img/persona.jpg">
-    
+
             <div class="titulo">
                 <h1>INICIAR SESIÓN</h1>
             </div>
-    
+
             <label for="rol" class="rol-text">ROL</label>
             <select name="idRol" id="rol" required class="select rol">
                     <option selected disabled value="">
@@ -70,24 +72,27 @@
                     <option value="2">Maestros</option>
                     <option value="3"> Alumno</option>
                   </select>
-    
+
             <label for="doc2" class="text"> Digite su documento </label>
             <input type="text" name="doc" class="doc2" id="doc2" required>
-    
-            <label for="cla2" class="text" >Clave </label>
-            <input type="password" name="contraseña" id="cla2" class="cla2" required>
-    
-            <button class="LogIn" type="submit" value="submit">Login</button> </td>
-           
-                
-      </main>
 
-      <footer>
+            <label for="cla2" class="text">Clave </label>
+            <input type="password" name="contraseña" id="cla2" class="cla2" required>
+
+            <a href="vistas/recuperrar.html">¿olvidaste tu contraseña?</a> <br> <br>
+
+            <button class="LogIn" type="submit" value="submit">Login</button> </td>
+
+
+    </main>
+
+    <footer>
         <div class="CosaFea">
-        Access.Pask WEB &copy; 2022
+            Access.Pask WEB &copy; 2022
         </div>
-      </footer>
+    </footer>
 
     <script src="formatos/script.js"></script>
 </body>
+
 </html>
