@@ -8,7 +8,5 @@ $conexion = mysqli_connect("localhost","root","","accesspask");
         $conexion->query("update usuario set contraseña= '$p1' where correo='$email' ")or die($conexion->error);
         echo"<script>alert('Su cambio de contraseña se realizo correctamente');window.location='../IniciarSesion.html'</script>";        
     }else{
-        echo"<script>alert('no coinciden');window.location='../correorecu/verificartoken.php'</script>";
-
     }
 ?>

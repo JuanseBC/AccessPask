@@ -1,4 +1,5 @@
 <?php 
+error_reporting(0);
 $conexion = mysqli_connect("localhost","root","","accesspask");
     $email =$_POST['correo'];
     $token =$_POST['token'];

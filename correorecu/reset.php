@@ -15,7 +15,7 @@ if( isset($_GET['correo'])  && isset($_GET['token']) ){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AccessPak</title>
 
-    <link rel="stylesheet" type="text/css" href="../stylos/estilos.css">
+    <link rel="stylesheet" type="text/css" href="../stylos/estilos1.css">
     <link rel="stylesheet" type="text/css" href="../stylos/iniciarsesion6.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
@@ -30,7 +30,7 @@ if( isset($_GET['correo'])  && isset($_GET['token']) ){
     <div class="menu__side" id="menu_side">
 
         <div >
-            <IMG class="img_principal" type="icon" SRC="http://localhost/AccessPask2/img/pask.png"  style="width: 60px;  margin: 3px;" >
+            <IMG class="img_principal" type="icon" SRC="http://localhost/AccessPask/img/pask.png"  style="width: 60px;  margin: 3px;" >
         </div>
 
         <div class="options__menu">	
@@ -64,7 +64,7 @@ if( isset($_GET['correo'])  && isset($_GET['token']) ){
     <main>
     <div class="container">
         <div class="row justify-content-md-center" style="margin-top:15%">
-            <form class="col-3" action="../controlador/verificartoken.php" method="POST">
+            <form class="col-3" action="../controlador/verificartoken2.php" method="POST">
             <IMG class="img_principal" SRC="../img/istockphoto-1345548249-1024x1024 recu.jpg">
                 <h2>Restablecer Password</h2>
                 <div class="mb-3">

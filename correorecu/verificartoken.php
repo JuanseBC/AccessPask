@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AccessPak</title>
 
-    <link rel="stylesheet" type="text/css" href="../stylos/estilos.css">
+    <link rel="stylesheet" type="text/css" href="../stylos/estilos1.css">
     <link rel="stylesheet" type="text/css" href="../stylos/iniciarsesion6.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
@@ -22,7 +22,7 @@
     <div class="menu__side" id="menu_side">
 
         <div >
-            <IMG class="img_principal" type="icon" SRC="http://localhost/AccessPask2/img/pask.png"  style="width: 60px;  margin: 3px;" >
+            <IMG class="img_principal" type="icon" SRC="http://localhost/AccessPask/img/pask.png"  style="width: 60px;  margin: 3px;" >
         </div>
 
         <div class="options__menu">	
@@ -58,7 +58,7 @@
             <?php if($correcto){ ?>
                 <form class="col-3" action="../controlador/cambiarcontraseña.php" method="POST">
                     <h2>Restablecer Password</h2>
-                    <IMG class="img_principal" SRC="http://localhost/AccessPask2/img/istockphoto-1345548249-1024x1024 recu.jpg">
+                    <IMG class="img_principal" SRC="http://localhost/AccessPask/img/istockphoto-1345548249-1024x1024 recu.jpg">
                     <div class="mb-3">
                         <label for="c" class="form-label">Nuevo Password</label>
                         <input type="password" class="form-control" id="myInput" name="p1" required>
