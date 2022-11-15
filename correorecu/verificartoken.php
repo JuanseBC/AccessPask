@@ -27,21 +27,21 @@
 
         <div class="options__menu">	
 
-            <a href="#" class="selected">
+            <a href="http://localhost/AccessPask/IniciarSesion.html" class="selected">
                 <div class="option">
                     <i class="fas fa-home" title="Inicio"></i>
                     <h4>Inicio</h4>
                 </div>
             </a>
 
-            <a href="http://localhost/AccessPask2/ReIngreso/ingreso.php">
+            <a href="http://localhost/AccessPask/ReIngreso/ingreso.php">
                 <div class="option">
                     <i class="fas fa-file-alt" title="Portafolio"></i>
                     <h4>Registrar ingreso</h4>
                 </div>
             </a>
             
-            <a href="http://localhost/AccessPask2/ReIngreso/salida.php">
+            <a href="http://localhost/AccessPask/ReIngreso/salida.php">
                 <div class="option">
                     <i class="far fa-file-alt" title="Cursos"></i>
                     <h4>Registrar salida</h4>

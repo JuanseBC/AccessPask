@@ -7,7 +7,7 @@
     <title>AccessPask</title>
     <link rel="icon" type="img" href="../img/pask.png" size="any">
 
-    <link rel="stylesheet" type="text/css" href="../stylos/estilos.css">
+    <link rel="stylesheet" type="text/css" href="../stylos/estilos1.css">
     <link rel="stylesheet" type="text/css" href="../stylos/iniciarsesion6.css">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
