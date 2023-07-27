@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="../stylos/activar1.css">
+<link rel="stylesheet" type="text/css" href="../stylos/activar2.css">
 
 
 <head>
@@ -29,8 +29,8 @@
                     <td></td><td></td>
                 </tr>
     <?php
-   $con= mysqli_connect ('localhost','root','','accesspask');
-   $consulta= "Select * from usuario where idrol=3 and idEst='2'";
+   $con= mysqli_connect ('sql306.epizy.com','epiz_33006201','HyWjIFt6yV','epiz_33006201_accesspask');
+   $consulta= "Select * from usuario where idrol=3 and idEst=2";
    $filas=mysqli_query($con, $consulta);
    while ($dato=mysqli_fetch_array($filas))
    {
