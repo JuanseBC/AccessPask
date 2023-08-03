@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Access Pask</title>
     <link rel="icon" type="img" href="../img/pask.png" size="any">
-    <link rel="stylesheet" type="text/css" href="../stylos/PRF5.css">
+    <link rel="stylesheet" type="text/css" href="../stylos/PRF5.CSS">
     
 </head>
 <body>
@@ -18,19 +18,23 @@
     <img src="../img/pask.png" alt="logo accespask">
     
 
-<ul>
+        <div class="iconos">
+            <div class="menu">
+                <ul>
+                    <li><a download="ayuda"  href="../MU/MUPRF.pdf" >?</a></li>
+                    <li><a href="../vistas/PRF.php">Cursos</a></li>
+                    <li><a href="../modelo/cerrar_sesion.php" img src="../img/salir.png">Salir</a> </li>
 
-    <li><a href="../vistas/PRF.php">Cursos</a></li>
-    <li><a href="../modelo/cerrar_sesion.php" img src="../img/salir.png">Salir</a> </li>
-    
-</ul>
+                </ul>
+        </div>
+    </div>
 </header>
 <main>
    
         <div class="nom">
           Listado de Estudiantes
         </div>
-            <form method="POST" action="../vistas/estbusq.php"> <input type="text" name='Filtro' required>  <input type="image" src="../img/lupa.png" width="3%" ></form>
+            <form method="POST" action="../vistas/estbusq.php"> <input type="number" name='Filtro' required>  <input type="image" src="../img/lupa.png" width="3%" ></form>
             <table >
             <thead>
                 <tr>
@@ -44,10 +48,10 @@
                 <tbody>
                 <?php
                 $buscar= $_POST["Filtro"];           
-                $host="localhost";
-                $user="root";
-                $pass="";
-                $bd="accesspask";
+                $host="sql306.byetcluster.com";
+                $user="epiz_33006201";
+                 $pass="HyWjIFt6yV";
+                 $bd="epiz_33006201_accesspask";
                 $con=mysqli_connect($host,$user,$pass);
         
                 mysqli_select_db($con,$bd); 
