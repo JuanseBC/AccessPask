@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="../stylos/ADM17.css">
+<link rel="stylesheet" type="text/css" href="../stylos/ADM21.css">
 
 <head>
     <meta charset="UTF-8">
@@ -16,14 +16,15 @@
                 <form method="post" action="../controlador/asig.php">
         
         <label for="rol" class="listado2">Asignar Curso</label>
+        <br>
        
 <!--          <input   class="Filtro"  placeholder="Digite el documento" name="documento" required>
  -->       
                 <?php
-        $host="localhost";
-        $user="root";
-        $pass="";
-        $bd="accesspask";
+        $host="sql306.epizy.com";
+        $user="epiz_33006201";
+        $pass="HyWjIFt6yV";
+        $bd="epiz_33006201_accesspask";
         $con=mysqli_connect($host,$user,$pass);
         mysqli_select_db($con,$bd);
          $consulta= "Select idCurso from cursos_ ";
@@ -32,6 +33,8 @@
          $fil= mysqli_query($con,$consul);
 
         ?>
+        <div style=" align-items: center;
+    margin-left: 40%;">
          <select name="Profesores" required class="select rol">
         <option selected disabled value="">Selecciona el maestro</option>
         <?php
@@ -55,9 +58,10 @@
     </select>
 
 
-            <button class="boton" type="submit" name="btnIngresar">
+            <button class="boton" style="  margin-left: 3%;" type="submit" name="btnIngresar">
                 Aceptar
             </button>
+        </div>
     </form>
     
 </body>
