@@ -29,7 +29,7 @@
                     <td></td><td></td>
                 </tr>
     <?php
-   $con= mysqli_connect ('localhost','root','','accesspask');
+   $con= mysqli_connect ('sql306.epizy.com','epiz_33006201','HyWjIFt6yV','epiz_33006201_accesspask');
    $consulta= "Select * from usuario where idrol=2 and idEst='2'";
    $filas=mysqli_query($con, $consulta);
    while ($dato=mysqli_fetch_array($filas))
