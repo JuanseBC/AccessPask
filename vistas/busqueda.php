@@ -1,7 +1,7 @@
 <?php include("../formatos/cerrse.php");          ?>
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="../stylos/ADM20.css">
+<link rel="stylesheet" type="text/css" href="../stylos/ADM21.css">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,8 +22,10 @@
         <li><a href="../vistas/Cursos.php">Cursos</a></li>
 
         <li><a href="../controlador/ConMaes.php">Maestros</a></li>
+        <li><a  href="../Reportes/rep.php">Informe</a></li>
 
         <li><a  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Registro</a></li>
+        <li><a  href="CRC.html">Nuevo curso</a></li>
   
         <li><a href="../modelo/cerrar_sesion.php">Salir</a> </li>
 
@@ -51,7 +53,7 @@
         <div class="listado">
           Listado de Estudiantes
         </div>
-        <form method="POST" action="../vistas/busqueda.php"> <input type="text" class="Filtro"name='Filtro' placeholder="Digite un documento">  <input type="image" src="../img/lupa.png" width="3%" ></form>
+        <form method="POST" action="../vistas/busqueda.php"> <input type="number" class="Filtro"name='Filtro' placeholder="Digite un documento">  <input type="image" src="../img/lupa.png" width="3%" ></form>
        <a class="boton" href="activar.php">Activar Usuario</a>
        
        <table  class="table">
@@ -64,10 +66,10 @@
                 </tr>
                 <?php
                 $buscar= $_POST["Filtro"];           
-                $host="localhost";
-                $user="root";
-                $pass="";
-                $bd="accesspask";
+                $host="sql306.epizy.com";
+                $user="epiz_33006201";
+                $pass="HyWjIFt6yV";
+                $bd="epiz_33006201_accesspask";
                 $con=mysqli_connect($host,$user,$pass);
         
                 mysqli_select_db($con,$bd);
@@ -88,6 +90,11 @@
      </table>
         </center>
     </div>
+    
+   <footer>
+  <button class="Bayuda" ><a class="Bayuda1" download="ayuda"  href="../MU/MUADM1.pdf" >?</a> </button>
+        </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
