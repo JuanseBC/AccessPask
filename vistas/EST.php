@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Access Pask</title>
     <link rel="icon" type="img" href="../img/pask.png" size="any">
-    <link rel="stylesheet" href="../stylos/EST2.css">
+    <link rel="stylesheet" href="../stylos/EST2.CSS">
   
 </head>
 
@@ -20,23 +20,21 @@
         
 
     <ul>
-
-       
+    <li><a download="ayuda"  href="../MU/MUEST.pdf" >?</a></li>
         <li><a href="../modelo/cerrar_sesion.php" img src="../img/salir.png">Salir</a> </li>
-                <li><a href="../Reportes/ind3.php"  style="left: 130%;position: absolute;padding-bottom: 29px;">Generar informe</a></li>
-
-        
-        
+        <li><a href="../Reportes/ind3.php"  style="padding-bottom: 30px;">Generar informe</a></li> 
     </ul>
     </header>
     <main>
 
     <?php
+           session_start();
+
         $des=$_SESSION['usuario'];
-        $host="localhost";
-        $user="root";
-        $pass="";
-        $bd="accesspask";
+        $host="sql306.byetcluster.com";
+        $user="epiz_33006201";
+        $pass="HyWjIFt6yV";
+        $bd="epiz_33006201_accesspask";
         $con=mysqli_connect($host,$user,$pass);
         mysqli_select_db($con,$bd);
 
@@ -54,13 +52,14 @@
 
         ?> 
 
-        <div class="nom"><img class="listmaes" src="../img/maestro.jpg">
+        <div class="nom"><img class="listmaes" src="../img/maestro.png">
             LISTA DE MAESTROS
         </div>
     <table >
         <thead>
         <tr >
-            <th class="text1">Nombre y Apellido</th>
+            <th class="text1">Nombre</th>
+            <th class="text1">Apellido</th>
             <th class="text1">Correo</th>
             <th class="text1">Excusa</th>
            
@@ -71,8 +70,9 @@
 
         <tr> 
              
-        <td> <?php echo  $dato['Nombre'] ." ". $dato['Apellido'] ; ?> <br><br></td> 
-        <td> <?php echo  $dato['correo'] ." " ?> <br><br></td>
+        <td> <?php echo  $dato['Nombre'] ." " ?></td>
+        <td><?php echo  $dato['Apellido'] .""?></td> 
+        <td> <?php echo  $dato['correo'] ." " ?> </td>
         
         <td> <a href="../vistas/excusa.php?id4=<?php echo $dato['documento']?>" class="btn btn-warning">Enviar  Excusa</li><br><br></td>
         </tr>
